@@ -1,10 +1,10 @@
-import Header from "./header";
+import SideNav from "./sidenav";
 import styles from "../src/styles/layout.module.css";
 
 export default function Layout({ children }) {
   return (
     <div className={styles.container}>
-      <Header />
+      <SideNav />
       <main>{children}</main>
     </div>
   );
