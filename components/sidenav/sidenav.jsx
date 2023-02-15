@@ -1,13 +1,22 @@
 import Image from "next/image";
-import Logo from "../public/logo_2.jpg";
+import Logo from "../../public/logo_3.jpg";
+import styles from "./sidenav.module.css";
 
 export default function SideNav() {
   return (
-    <div style={{ height: "100vh", width: "20vw", backgroundColor: "green" }}>
-      <div className="logo">
-        <Image src={Logo} alt="logo" width={"20vw"} height={200} />
+    <div className={styles.container}>
+      <div className={styles.logo}>
+        <Image
+          src={Logo}
+          alt="logo"
+          style={{
+            width: "90%",
+            maxWidth: "200px",
+            height: "auto",
+          }}
+        />
       </div>
-      <div className="nav">
+      <div className={styles.nav}>
         <nav>
           <ul>
             <li>About</li>
