@@ -27,6 +27,9 @@ body {
     sans-serif;
   font-size: var(--body);
 }
+body::-webkit-scrollbar {
+  width: 0;
+}
 h1 {
   font-size: var(--heading1);
 }
