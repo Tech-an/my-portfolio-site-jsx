@@ -19,12 +19,36 @@ export default function SideNav() {
       <div className={styles.nav}>
         <nav>
           <ul>
-            <li>About</li>
-            <li>Career</li>
-            <li>Skills</li>
-            <li>Products</li>
-            <li>Blog</li>
-            <li>Hobbies</li>
+            <li style={{ "--clr": "#00ade1" }}>
+              <a href="#About" data-text="&nbsp;&nbsp;About&nbsp;">
+                &nbsp;&nbsp;About&nbsp;
+              </a>
+            </li>
+            <li style={{ "--clr": "#ff6493" }}>
+              <a href="#Career" data-text="&nbsp;&nbsp;Career&nbsp;">
+                &nbsp;&nbsp;Career&nbsp;
+              </a>
+            </li>
+            <li style={{ "--clr": "#ffdd1c" }}>
+              <a href="#Skills" data-text="&nbsp;&nbsp;Skills&nbsp;">
+                &nbsp;&nbsp;Skills&nbsp;
+              </a>
+            </li>
+            <li style={{ "--clr": "#00dc82" }}>
+              <a href="#Products" data-text="&nbsp;&nbsp;Products&nbsp;">
+                &nbsp;&nbsp;Products&nbsp;
+              </a>
+            </li>
+            <li style={{ "--clr": "#dc00d4" }}>
+              <a href="#Blog" data-text="&nbsp;&nbsp;Blog&nbsp;">
+                &nbsp;&nbsp;Blog&nbsp;
+              </a>
+            </li>
+            <li style={{ "--clr": "#7700e2" }}>
+              <a href="#Hobbies" data-text="&nbsp;&nbsp;Hobbies&nbsp;">
+                &nbsp;&nbsp;Hobbies&nbsp;
+              </a>
+            </li>
           </ul>
         </nav>
       </div>

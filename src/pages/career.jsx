@@ -9,7 +9,7 @@ import ak from "../../public/AK.jpg";
 
 export default function Career() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="Career">
       <h1 className={styles.title}>Career</h1>
       <div className={styles.career}>
         {/* <Paper elevation={3} className={styles.paper}> */}

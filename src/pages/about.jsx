@@ -4,7 +4,7 @@ import profile from "../../public/profile.jpg";
 
 export default function About() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="About">
       <h1 className={styles.title}>About</h1>
       <div className={styles.profile}>
         <figure className={styles.figure}>
