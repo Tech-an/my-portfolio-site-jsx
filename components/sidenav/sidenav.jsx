@@ -11,7 +11,7 @@ export default function SideNav() {
           alt="logo"
           style={{
             width: "90%",
-            maxWidth: "200px",
+            maxWidth: "130px",
             height: "auto",
           }}
         />

@@ -10,6 +10,7 @@
   position: sticky;
   top: 0;
   left: 0;
+  background-color: #f7f7f7;
 }
 .logo {
   text-align: center;
@@ -20,7 +21,7 @@
   gap: 20px;
 }
 .nav > nav > ul > li {
-  font-size: var(--small-heading3);
+  font-size: clamp(8px, var(--small-heading3), 18px);
   padding: 2px 0;
   position: relative;
   cursor: pointer;

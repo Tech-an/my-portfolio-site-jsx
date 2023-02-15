@@ -1,0 +1,50 @@
+.container {
+  padding: 100px 5%;
+}
+
+.title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  max-width: 400px;
+  width: clamp(200px, 70%, 400px);
+  height: auto;
+  border-radius: 40%;
+}
+
+.profile .text {
+  width: clamp(300px, 100%, 100%);
+}
+
+.profile .text p {
+  margin-top: 30px;
+}
+
+/* タブレット用のスタイル */
+@media (max-width: 768px) {
+  .container {
+    /* padding: 100px 0; */
+  }
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .profile .text {
+    text-align: center;
+  }
+}
