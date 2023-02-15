@@ -1,0 +1,82 @@
+.container {
+  padding: 100px 5%;
+}
+
+.title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.career {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.career > ul > li {
+  display: flex;
+  gap: 30px;
+  height: 210px;
+}
+
+.figure {
+  width: 130px;
+  position: relative;
+}
+.figure::after {
+  content: "";
+  height: 80px;
+  width: 0;
+  border: 1px solid rgb(182, 182, 182);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 40%;
+  padding: 15px;
+  padding-top: 0px;
+}
+
+.content > h3 {
+  color: rgb(86, 86, 86);
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .career > ul > li {
+    gap: 10px;
+    height: 120px;
+  }
+  .figure {
+    width: 100px;
+  }
+  .content h2 {
+    font-size: var(--small-heading2);
+  }
+  .content h3 {
+    font-size: var(--small-heading3);
+  }
+  .figure::after {
+    height: 50px;
+    top: 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* TODO カルーセルを実装して、pタグの内容は開閉可能にする */
+  .career > ul > li {
+    gap: 0px;
+    height: 80px;
+  }
+  .figure {
+    width: 0px;
+    margin-right: 20px;
+  }
+  .figure::after {
+    display: none;
+  }
+}
