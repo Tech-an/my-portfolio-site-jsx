@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <div className={styles.container}>
       <SideNav />
-      <main>{children}</main>
+      <main style={{ width: "100%" }}>{children}</main>
     </div>
   );
 }
