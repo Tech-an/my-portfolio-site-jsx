@@ -17,10 +17,13 @@ export default function About() {
         <div className={styles.text}>
           <h2 className={styles.myname}>佐藤 哲也 (Tetsuya Sato)</h2>
           <h3 className={styles.myjob}>名古屋大学大学院生 (M2)</h3>
-          <p>
-            こんばんみこんばんみこんばんみこんばんみこんばんみこんばんみこんばんみこんばんみこんばんみこんばんみ
-            こんばんみこんばんみこんばんみこんばんみこんばんみこんばんみこんばんみこんばんみこんばんみこんばんみ
-          </p>
+          <div>
+            <p>
+              秋田県出身の大学生。現在は名古屋大学の院生、次年度からITコンサル会社で社会人生活をスタート。
+              IT系・科学一般・社会・海外など何でも興味がある好奇心が強み。
+              マラソンとテトリスとサウナが好き。bookカフェが生息地。
+            </p>
+          </div>
         </div>
         {/* </Paper> */}
       </div>

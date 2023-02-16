@@ -105,7 +105,7 @@ export default function Skills() {
   const [skill, setSkill] = useState(frontend);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="Skills">
       <h1 className={`${styles.title} ${styles.sticky}`}>
         <span>S</span>kills
       </h1>

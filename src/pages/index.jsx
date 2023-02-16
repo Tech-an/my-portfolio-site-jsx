@@ -3,6 +3,7 @@ import Layout from "components/layout";
 import About from "./about";
 import Career from "./career";
 import Skills from "./skills";
+import Works from "./works";
 
 import { useState, useEffect } from "react";
 
@@ -34,6 +35,7 @@ export default function Index() {
           <About />
           <Career />
           <Skills />
+          <Works />
           <h1
             style={{
               height: "200vh",

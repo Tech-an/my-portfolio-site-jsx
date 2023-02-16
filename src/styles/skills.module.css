@@ -37,6 +37,7 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  border-left: 5px solid rgb(46, 46, 46);
 }
 .side_menu {
   color: #fff;
@@ -172,6 +173,7 @@
   .side_menu_container {
     display: block;
     width: 100%;
+    border-left: 0px solid rgb(46, 46, 46);
   }
   .side_menu {
     margin-top: 0;
