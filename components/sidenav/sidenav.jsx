@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../../public/logo_3.jpg";
+import Logo from "../../public/logo_5.jpg";
 import styles from "./sidenav.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,15 +13,17 @@ export default function SideNav() {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <Image
-          src={Logo}
-          alt="logo"
-          style={{
-            width: "90%",
-            maxWidth: "130px",
-            height: "auto",
-          }}
-        />
+        <Link to="Home" spy={true} smooth={true} duration={500}>
+          <Image
+            src={Logo}
+            alt="logo"
+            style={{
+              width: "90%",
+              maxWidth: "130px",
+              height: "auto",
+            }}
+          />
+        </Link>
       </div>
       <div className={styles.nav}>
         <nav>
@@ -55,13 +57,13 @@ export default function SideNav() {
             </li>
             <li style={{ "--clr": "#00dc82" }}>
               <Link
-                to="Products"
+                to="Works"
                 spy={true}
                 smooth={true}
                 duration={500}
-                data-text="&nbsp;&nbsp;Products&nbsp;"
+                data-text="&nbsp;&nbsp;Works&nbsp;"
               >
-                &nbsp;&nbsp;Products&nbsp;
+                &nbsp;&nbsp;Works&nbsp;
               </Link>
             </li>
             <li style={{ "--clr": "#dc00d4" }}>

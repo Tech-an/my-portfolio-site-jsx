@@ -22,14 +22,14 @@ export default function Index() {
 
   return (
     <div>
-      <div
-        className={styles.progressbar}
-        style={{ height: `${height}%` }}
-      ></div>
-      <div className={styles.scrollPath}></div>
       <Layout>
-        <section>
-          <Home />
+        <Home />
+        <section className={styles.container}>
+          <div
+            className={styles.progressbar}
+            style={{ height: `${height}%` }}
+          ></div>
+          <div className={styles.scrollPath}></div>
           <About />
           <Career />
           <h1

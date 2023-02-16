@@ -15,7 +15,28 @@
 }
 .logo {
   text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
 }
+.logo:hover {
+  animation: logo_anime 1.5s ease-in-out infinite;
+  /* transform: rotate(10deg); */
+}
+@keyframes logo_anime {
+  20% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-10deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+}
+
 .nav > nav > ul {
   display: flex;
   flex-direction: column;
