@@ -54,3 +54,40 @@
   width: 100%;
   filter: drop-shadow(0 0 25px var(--clr));
 }
+
+.sns {
+  font-size: 26px;
+  color: #fff;
+}
+.sns > ul {
+  display: flex;
+  gap: 15px;
+}
+
+.sns > ul > li {
+  cursor: pointer;
+}
+.sns > ul > li:hover {
+  animation: hover-animation 1.5s infinite ease-in-out;
+}
+
+/* スクロールアニメーションを定義 */
+@keyframes hover-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .sns > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

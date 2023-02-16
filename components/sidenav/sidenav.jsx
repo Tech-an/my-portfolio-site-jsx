@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Logo from "../../public/logo_3.jpg";
 import styles from "./sidenav.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faTwitter,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function SideNav() {
   return (
@@ -52,11 +58,23 @@ export default function SideNav() {
           </ul>
         </nav>
       </div>
-      <div className="sns">
+      <div className={styles.sns}>
         <ul>
-          <li>Instagram</li>
-          <li>Twitter</li>
-          <li>GitHub</li>
+          <li>
+            <a href="https://www.instagram.com/teechan.s/">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+          </li>
+          <li>
+            <a href="#About">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+          </li>
+          <li>
+            <a href="#About">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </li>
         </ul>
       </div>
     </div>
