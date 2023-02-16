@@ -2,6 +2,7 @@ import Home from "./home";
 import Layout from "components/layout";
 import About from "./about";
 import Career from "./career";
+import Skills from "./skills";
 
 import { useState, useEffect } from "react";
 
@@ -32,6 +33,7 @@ export default function Index() {
           <div className={styles.scrollPath}></div>
           <About />
           <Career />
+          <Skills />
           <h1
             style={{
               height: "200vh",

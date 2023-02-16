@@ -1,0 +1,41 @@
+{
+  "title": "開発技術",
+  "contents": [
+    {
+      "name": "Git/GitHub",
+      "percent": "75%",
+      "clr_start": "#1fe6ff",
+      "clr_end": "#673AB7"
+    },
+    {
+      "name": "Figma",
+      "percent": "75%",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "Unity",
+      "percent": "40%",
+      "clr_start": "#ffee54",
+      "clr_end": "#ff00ca"
+    },
+    {
+      "name": "AWS",
+      "percent": "20%",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "Docker",
+      "percent": "75%",
+      "clr_start": "#ffee54",
+      "clr_end": "#ff00ca"
+    },
+    {
+      "name": "Firebase",
+      "percent": "20%",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    }
+  ]
+}

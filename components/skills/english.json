@@ -1,0 +1,29 @@
+{
+  "title": "英語",
+  "contents": [
+    {
+      "name": "Reading",
+      "percent": "75%",
+      "clr_start": "#1fe6ff",
+      "clr_end": "#673AB7"
+    },
+    {
+      "name": "Listening",
+      "percent": "60%",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "Writing",
+      "percent": "20%",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "Speaking",
+      "percent": "65%",
+      "clr_start": "#ffee54",
+      "clr_end": "#ff00ca"
+    }
+  ]
+}
