@@ -7,6 +7,7 @@ import {
   faTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function SideNav() {
   return (
@@ -26,34 +27,64 @@ export default function SideNav() {
         <nav>
           <ul>
             <li style={{ "--clr": "#00ade1" }}>
-              <a href="#About" data-text="&nbsp;&nbsp;About&nbsp;">
+              <Link
+                to="About"
+                spy={true}
+                smooth={true}
+                duration={500}
+                data-text="&nbsp;&nbsp;About&nbsp;"
+              >
                 &nbsp;&nbsp;About&nbsp;
-              </a>
+              </Link>
             </li>
             <li style={{ "--clr": "#ff6493" }}>
-              <a href="#Career" data-text="&nbsp;&nbsp;Career&nbsp;">
+              <Link
+                to="Career"
+                spy={true}
+                smooth={true}
+                duration={500}
+                data-text="&nbsp;&nbsp;Career&nbsp;"
+              >
                 &nbsp;&nbsp;Career&nbsp;
-              </a>
+              </Link>
             </li>
             <li style={{ "--clr": "#ffdd1c" }}>
-              <a href="#Skills" data-text="&nbsp;&nbsp;Skills&nbsp;">
+              <Link to="Skills" data-text="&nbsp;&nbsp;Skills&nbsp;">
                 &nbsp;&nbsp;Skills&nbsp;
-              </a>
+              </Link>
             </li>
             <li style={{ "--clr": "#00dc82" }}>
-              <a href="#Products" data-text="&nbsp;&nbsp;Products&nbsp;">
+              <Link
+                to="Products"
+                spy={true}
+                smooth={true}
+                duration={500}
+                data-text="&nbsp;&nbsp;Products&nbsp;"
+              >
                 &nbsp;&nbsp;Products&nbsp;
-              </a>
+              </Link>
             </li>
             <li style={{ "--clr": "#dc00d4" }}>
-              <a href="#Blog" data-text="&nbsp;&nbsp;Blog&nbsp;">
+              <Link
+                to="Blog"
+                spy={true}
+                smooth={true}
+                duration={500}
+                data-text="&nbsp;&nbsp;Blog&nbsp;"
+              >
                 &nbsp;&nbsp;Blog&nbsp;
-              </a>
+              </Link>
             </li>
             <li style={{ "--clr": "#7700e2" }}>
-              <a href="#Hobbies" data-text="&nbsp;&nbsp;Hobbies&nbsp;">
+              <Link
+                to="Hobbies"
+                spy={true}
+                smooth={true}
+                duration={500}
+                data-text="&nbsp;&nbsp;Hobbies&nbsp;"
+              >
                 &nbsp;&nbsp;Hobbies&nbsp;
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

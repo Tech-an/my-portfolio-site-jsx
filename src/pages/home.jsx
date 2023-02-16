@@ -1,6 +1,7 @@
 import styles from "../styles/home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Home() {
   return (
@@ -10,9 +11,16 @@ export default function Home() {
           <h1>Tetsuya Sato.</h1>
           <p>welcom to my portfolio site!</p>
           <figure className={styles.arrowdown}>
-            <a href="#About">
+            <Link
+              // activeClass="active"
+              to="About"
+              spy={true}
+              smooth={true}
+              // offset={-70}
+              duration={500}
+            >
               <FontAwesomeIcon icon={faCircleChevronDown} />
-            </a>
+            </Link>
           </figure>
         </div>
       </div>
