@@ -4,9 +4,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.slideshow}>
-        <h1 className={styles.title}>
-          <span>T</span>etsuya <span>S</span>ato.
-        </h1>
+        <div className={styles.title}>
+          <h1>Tetsuya Sato.</h1>
+          <p>welcom to my portfolio site!</p>
+        </div>
       </div>
     </div>
   );

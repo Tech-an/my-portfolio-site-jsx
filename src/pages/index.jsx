@@ -22,7 +22,6 @@ export default function Index() {
 
   return (
     <div>
-      <Home />
       <div
         className={styles.progressbar}
         style={{ height: `${height}%` }}
@@ -30,6 +29,7 @@ export default function Index() {
       <div className={styles.scrollPath}></div>
       <Layout>
         <section>
+          <Home />
           <About />
           <Career />
           <h1

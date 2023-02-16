@@ -1,13 +1,36 @@
 .container {
-  padding: 100px 5%;
+  background: url(../../public/student.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+  /* background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken; */
 }
 
 .title {
-  margin-bottom: 80px;
   text-align: center;
 }
 
+.sticky {
+  padding: 10px;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgb(46, 46, 46);
+  color: #dfdfdf;
+  font-size: calc(var(--heading1) * 0.7);
+  letter-spacing: 3px;
+}
+.sticky span {
+  color: #ff6493;
+  filter: drop-shadow(0 0 25px #ff6493);
+  font-size: calc(var(--heading1) * 1.2);
+}
+
 .career {
+  padding: 120px 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
