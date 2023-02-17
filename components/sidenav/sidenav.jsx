@@ -85,13 +85,13 @@ export default function SideNav() {
             </li>
             <li style={{ "--clr": "#7700e2" }}>
               <Link
-                to="Hobbies"
+                to="Play"
                 spy={true}
                 smooth={true}
                 duration={500}
-                data-text="&nbsp;&nbsp;Hobbies&nbsp;"
+                data-text="&nbsp;&nbsp;Play&nbsp;"
               >
-                &nbsp;&nbsp;Hobbies&nbsp;
+                &nbsp;&nbsp;Play&nbsp;
               </Link>
             </li>
           </ul>

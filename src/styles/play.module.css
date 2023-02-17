@@ -1,0 +1,30 @@
+.container {
+  background: url(../../public/play.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  /* background-blend-mode: lighten; */
+  background-blend-mode: darken;
+  height: 100vh;
+}
+.title {
+  text-align: center;
+}
+.sticky {
+  padding: 10px;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--subClr);
+  color: #dfdfdf;
+  font-size: calc(var(--heading1) * 0.7);
+  letter-spacing: 3px;
+}
+.sticky span {
+  color: #7700e2;
+  filter: drop-shadow(0 0 25px #7700e2);
+  font-size: calc(var(--heading1) * 1.2);
+}

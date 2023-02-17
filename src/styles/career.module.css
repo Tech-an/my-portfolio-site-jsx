@@ -73,7 +73,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgb(46, 46, 46);
+  background: var(--subClr);
   color: #dfdfdf;
   font-size: calc(var(--heading1) * 0.7);
   letter-spacing: 3px;

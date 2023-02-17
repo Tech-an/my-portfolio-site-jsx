@@ -4,6 +4,8 @@ import About from "./about";
 import Career from "./career";
 import Skills from "./skills";
 import Works from "./works";
+import Blog from "./blog";
+import Play from "./play";
 
 import { useState, useEffect } from "react";
 
@@ -36,15 +38,8 @@ export default function Index() {
           <Career />
           <Skills />
           <Works />
-          <h1
-            style={{
-              height: "200vh",
-              width: "80vw",
-              backgroundColor: "blue",
-            }}
-          >
-            メインコンテンツ部
-          </h1>
+          <Blog />
+          <Play />
         </section>
       </Layout>
     </div>

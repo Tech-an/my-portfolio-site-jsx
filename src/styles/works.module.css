@@ -6,6 +6,7 @@
   background-attachment: fixed;
   /* background-color: rgba(255, 255, 255, 0.2);
   background-blend-mode: lighten; */
+  min-height: 100vh;
 }
 .title {
   text-align: center;
@@ -16,7 +17,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgb(46, 46, 46);
+  background: var(--subClr);
   color: #dfdfdf;
   font-size: calc(var(--heading1) * 0.7);
   letter-spacing: 3px;
@@ -33,7 +34,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: minmax(100px, auto-fill);
-  padding: 80px 40px;
+  padding: 100px 40px;
   grid-auto-flow: dense;
   grid-gap: 10px;
 }

@@ -17,7 +17,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgb(46, 46, 46);
+  background: var(--subClr);
   /* color: #00ade1; */
   /* color: rgba(0, 172, 224, 0.8); */
   color: #dfdfdf;

@@ -3,6 +3,8 @@
   --white: "fff";
   --gray: "444";
   --black: "222";
+  --mainClr: rgb(30, 30, 46);
+  --subClr: rgb(30, 30, 30);
   /* font-size for mobile-phone and desktop-pc */
   --body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem); /* 16-18px */
   --display: clamp(4.5rem, 1.83rem + 11.34vw, 10rem);

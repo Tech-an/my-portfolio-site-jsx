@@ -6,6 +6,7 @@ import apu from "../../public/APU.jpg";
 import niu from "../../public/NIU.jpg";
 import nu from "../../public/NU.jpg";
 import ak from "../../public/AK.jpg";
+import ArrowDown from "components/arrowdown/arrowdown";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";

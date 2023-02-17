@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../styles/about.module.css";
 import profile from "../../public/profile.jpg";
 import Paper from "@mui/material/Paper";
+import ArrowDown from "components/arrowdown/arrowdown";
 
 export default function About() {
   return (
@@ -26,6 +27,7 @@ export default function About() {
           </div>
         </div>
         {/* </Paper> */}
+        <ArrowDown id="Career" />
       </div>
     </div>
   );

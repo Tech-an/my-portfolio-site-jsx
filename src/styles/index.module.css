@@ -1,6 +1,6 @@
 .container {
   padding: 10px 10px 0;
-  background-color: black;
+  background-color: var(--subClr);
 }
 
 .scrollPath {

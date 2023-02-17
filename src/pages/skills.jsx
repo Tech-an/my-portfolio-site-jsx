@@ -39,7 +39,7 @@ export default function Skills() {
     return (
       <div className={styles.side_menu_container}>
         <div className={styles.side_menu}>
-          <h3 style={{ marginBottom: "20px" }}>Skill-Sets</h3>
+          <h3 style={{ marginBottom: "20px" }}>Skill-Lists</h3>
           {menus.map((menu) => {
             return sideMenuItem(menu.title, menu.items);
           })}

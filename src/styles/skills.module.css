@@ -15,7 +15,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgb(46, 46, 46);
+  background: var(--subClr);
   color: #dfdfdf;
   font-size: calc(var(--heading1) * 0.7);
   letter-spacing: 3px;
@@ -32,12 +32,14 @@
 .side_menu_container {
   position: relative;
   width: 20%;
-  background-color: #000;
+  /* background-color: var(--mainClr); */
+  background-color: rgb(140, 100, 0);
+  /* background-color: #000; */
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  border-left: 5px solid rgb(46, 46, 46);
+  /* border-left: 5px solid rgb(46, 46, 46); */
 }
 .side_menu {
   color: #fff;
@@ -58,6 +60,7 @@
 .menu_item_title:hover {
   transition: all 0.2s ease-in-out;
   color: #ffdd1c;
+  /* color: #000; */
 }
 .menu_item_title::before {
   content: "> ";
