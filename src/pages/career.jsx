@@ -74,7 +74,7 @@ export default function Career() {
               text: "",
             })}
             {careerItem({
-              years: "2022.4 - 2022.3",
+              years: "2022.4 - 2023.3",
               imgSrc: nu,
               imgAlt: "大学のロゴ",
               title: "名古屋大学大学院 / 情報学研究科 (M2)",

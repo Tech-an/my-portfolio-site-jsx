@@ -6,7 +6,6 @@
   background-attachment: fixed;
   /* background-color: rgba(255, 255, 255, 0.2);
   background-blend-mode: lighten; */
-  height: 100vh;
 }
 .title {
   text-align: center;
@@ -29,13 +28,12 @@
 }
 
 .grid_container {
-  height: 70vh;
   position: relative;
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: minmax(100px, auto-fill);
-  margin: 40px;
+  padding: 80px 40px;
   grid-auto-flow: dense;
   grid-gap: 10px;
 }
@@ -58,15 +56,27 @@
 }
 .grid_container .box img {
   position: relative;
-  max-width: 100px;
+  width: auto;
+  max-width: 80%;
+  height: auto;
+  max-height: 250px;
   margin-bottom: 10px;
 }
+
+.box .description {
+  font-size: 1rem;
+}
+
 .grid_container .box:nth-child(1) {
   grid-column: span 2;
   grid-row: span 2;
 }
-.grid_container .box:nth-child(4) {
-  grid-column: span 2;
+.grid_container .box:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.grid_container .box:nth-child(3) {
+  grid-column: span 1;
   grid-row: span 1;
 }
 
@@ -74,4 +84,57 @@
   overflow-wrap: break-word;
   word-wrap: break-word; /* overflow-wrap のエイリアス */
   max-width: 100%; /* 親要素の幅に合わせてテキストを折り返す */
+}
+
+.modal_bg {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.mask {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.modal_container {
+  height: 80%;
+  width: 80%;
+  z-index: 100;
+  background-color: rgb(250, 250, 250);
+}
+
+.modal_content {
+  margin: 20px 40px;
+}
+
+@media (min-width: 1530px) {
+  .grid_container .box:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+@media (max-width: 880px) {
+  .grid_container {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+  }
+  .grid_container .box {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+  .grid_container .box img {
+    max-height: 150px;
+  }
 }
