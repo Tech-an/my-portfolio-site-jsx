@@ -74,16 +74,19 @@ export default function SideNav() {
             </li>
             <li style={{ "--clr": "#dc00d4" }}>
               <Link
-                to="Blog"
+                to="Play"
+                // to="Blog"
                 spy={true}
                 smooth={true}
                 duration={500}
-                data-text="&nbsp;&nbsp;Blog&nbsp;"
+                data-text="&nbsp;&nbsp;Play&nbsp;"
+                // data-text="&nbsp;&nbsp;Blog&nbsp;"
               >
-                &nbsp;&nbsp;Blog&nbsp;
+                {/* &nbsp;&nbsp;Blog&nbsp; */}
+                &nbsp;&nbsp;Play&nbsp;
               </Link>
             </li>
-            <li style={{ "--clr": "#7700e2" }}>
+            {/* <li style={{ "--clr": "#7700e2" }}>
               <Link
                 to="Play"
                 spy={true}
@@ -93,7 +96,7 @@ export default function SideNav() {
               >
                 &nbsp;&nbsp;Play&nbsp;
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

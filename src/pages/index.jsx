@@ -4,18 +4,13 @@ import About from "./about";
 import Career from "./career";
 import Skills from "./skills";
 import Works from "./works";
-import Blog from "./blog";
 import Play from "./play";
-
+import Blog from "./blog";
 import ProgressBar from "components/progressbar/progressbar";
-
-import { useState, useEffect } from "react";
-
-import { getPostBySlug } from "libs/api";
 
 import styles from "../styles/index.module.css";
 
-export default function Index({ title }) {
+export default function Index() {
   return (
     <div>
       <Layout>
@@ -25,8 +20,8 @@ export default function Index({ title }) {
           <Career />
           <Skills />
           <Works />
+          <Play />
           {/* <Blog /> */}
-          {/* <Play /> */}
         </section>
         <ProgressBar />
       </Layout>
@@ -34,14 +29,14 @@ export default function Index({ title }) {
   );
 }
 
-export async function getStaticProps() {
-  const slug = "first";
+// export async function getStaticProps() {
+//   const slug = "first";
 
-  const post = await getPostBySlug(slug);
+//   const post = await getPostBySlug(slug);
 
-  return {
-    props: {
-      title: post.title,
-    },
-  };
-}
+//   return {
+//     props: {
+//       title: post.title,
+//     },
+//   };
+// }
