@@ -39,7 +39,7 @@ export default function Index() {
           <Skills />
           <Works />
           <Blog />
-          <Play />
+          {/* <Play /> */}
         </section>
       </Layout>
     </div>

@@ -73,4 +73,7 @@
   .profile .text {
     text-align: center;
   }
+  .arrowdown {
+    display: none;
+  }
 }
