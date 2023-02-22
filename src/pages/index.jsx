@@ -7,41 +7,41 @@ import Works from "./works";
 import Blog from "./blog";
 import Play from "./play";
 
+import ProgressBar from "components/progressbar/progressbar";
+
 import { useState, useEffect } from "react";
+
+import { getPostBySlug } from "libs/api";
 
 import styles from "../styles/index.module.css";
 
-export default function Index() {
-  const [height, setHeight] = useState(0);
-  useEffect(() => {
-    const totalHeight = document.body.scrollHeight - window.innerHeight;
-    const handleScroll = () => {
-      setHeight((window.scrollY / totalHeight) * 100);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+export default function Index({ title }) {
   return (
     <div>
       <Layout>
         <Home />
         <section className={styles.container}>
-          <div
-            className={styles.progressbar}
-            style={{ height: `${height}%` }}
-          ></div>
-          <div className={styles.scrollPath}></div>
           <About />
           <Career />
           <Skills />
           <Works />
-          <Blog />
+          {/* <Blog /> */}
           {/* <Play /> */}
         </section>
+        <ProgressBar />
       </Layout>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const slug = "first";
+
+  const post = await getPostBySlug(slug);
+
+  return {
+    props: {
+      title: post.title,
+    },
+  };
 }

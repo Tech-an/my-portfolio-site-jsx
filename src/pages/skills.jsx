@@ -4,7 +4,6 @@ import backend from "../../components/skills/backend.json";
 import devtool from "../../components/skills/devtool.json";
 import english from "../../components/skills/english.json";
 import { useState } from "react";
-import { padding } from "@mui/system";
 
 export default function Skills() {
   // sideMenu
@@ -12,6 +11,7 @@ export default function Skills() {
     return (
       <div className={styles.menu_item}>
         <p
+          key={title}
           style={{
             fontSize: "1.2rem",
             borderBottom: "2px solid #fff",
@@ -69,7 +69,7 @@ export default function Skills() {
     gradient_end = "#673AB7"
   ) => {
     return (
-      <div className={styles.skill_item}>
+      <div className={styles.skill_item} key={name}>
         <span className={styles.name}>{name}</span>
         <div className={styles.percent}>
           <div

@@ -1,9 +1,4 @@
-.container {
-  padding: 10px 10px 0;
-  background-color: var(--subClr);
-}
-
-/* .scrollPath {
+.scrollPath {
   position: fixed;
   top: 0;
   right: 0;
@@ -47,4 +42,4 @@
   50% {
     filter: hue-rotate(360deg);
   }
-} */
+}
