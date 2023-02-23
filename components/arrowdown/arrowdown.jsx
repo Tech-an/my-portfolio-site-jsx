@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-export default function ArrowDown({ id }) {
+export default function ArrowDown({ id, clr }) {
   return (
-    <figure className={styles.arrowdown}>
+    <figure className={styles.arrowdown} style={{ color: clr }}>
       <Link
         // activeClass="active"
         to={id}

@@ -8,9 +8,9 @@ export default function Home() {
         <div className={styles.title}>
           <h1>Tetsuya Sato.</h1>
           <p>welcome to my portfolio site!</p>
-          <ArrowDown id="About" />
         </div>
       </div>
+      <ArrowDown id="About" clr="white" />
     </div>
   );
 }

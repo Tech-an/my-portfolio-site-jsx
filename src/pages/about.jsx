@@ -25,9 +25,9 @@ export default function About() {
               マラソンとテトリスとサウナが好き。bookカフェが生息地。
             </p>
           </div>
-          <div className={styles.arrowdown}>
-            <ArrowDown id="Career" />
-          </div>
+        </div>
+        <div className={styles.arrowdown}>
+          <ArrowDown id="Career" clr="black" />
         </div>
         {/* </Paper> */}
       </div>
