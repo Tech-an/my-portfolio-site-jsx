@@ -14,19 +14,22 @@ import CareerUpgrade from "components/careerUpgrade/career-upgrade";
 export default function Index() {
   return (
     <div>
-      <CareerUpgrade />
-      {/* <Layout>
+      {/* <CareerUpgrade />
+      <Career /> */}
+
+      <Layout>
         <Home />
         <section className={styles.container}>
           <About />
-          <Career />
+          {/* <Career /> */}
+          <CareerUpgrade />
           <Skills />
           <Works />
           <Blog />
           <Play />
         </section>
         <ProgressBar />
-      </Layout> */}
+      </Layout>
     </div>
   );
 }
