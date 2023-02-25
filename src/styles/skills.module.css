@@ -31,15 +31,14 @@
 }
 .side_menu_container {
   position: relative;
-  width: 20%;
-  /* background-color: var(--mainClr); */
-  background-color: rgb(140, 100, 0);
-  /* background-color: #000; */
+  width: 25%;
+  max-width: 230px;
+  /* background-color: rgb(140, 100, 0); */
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  /* border-left: 5px solid rgb(46, 46, 46); */
 }
 .side_menu {
   color: #fff;
@@ -60,7 +59,6 @@
 .menu_item_title:hover {
   transition: all 0.2s ease-in-out;
   color: #ffdd1c;
-  /* color: #000; */
 }
 .menu_item_title::before {
   content: "> ";
@@ -87,11 +85,10 @@
 }
 .skill_item {
   position: relative;
-  display: flex;
   width: 40%;
   min-width: 230px;
   margin: 20px 20px;
-  padding: 24px 10px 18px;
+  padding: 15px 10px 12px;
   background: linear-gradient(#616161 0%, #333 10%, #222);
   border-radius: 8px;
   overflow: hidden;
@@ -109,50 +106,58 @@
   z-index: 10;
 }
 .skill_item .name {
+  font-size: 1.2em;
   position: relative;
-  width: 110px;
   text-align: right;
   color: #fff;
   margin-top: -2px;
+  /* margin-bottom: 5px; */
 }
 .skill_item .value {
   position: relative;
-  width: 40px;
+  /* width: 40px; */
   text-align: left;
   color: #fff;
   margin-top: -2px;
+  display: flex;
+  align-items: center;
 }
 .skill_item .percent {
   position: relative;
-  width: calc(100% - 150px);
   height: 20px;
-  margin: 0 10px;
-  border-radius: 10px;
-  background: #151515;
+  margin: 0;
+  border-radius: 5px;
+  /* background: linear-gradient(45deg, var(--clr_start), var(--clr_end)); */
+  background: linear-gradient(
+    45deg,
+    #ffc800,
+    #ffa900,
+    #ff5700,
+    #f94e00,
+    #f90404
+  );
   box-shadow: inset 0 0 10px #000;
   overflow: hidden;
 }
 .skill_item .progress {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100%;
-  border-radius: 10px;
-  background: linear-gradient(45deg, var(--clr_start), var(--clr_end));
-  box-shadow: inset 0 0 2px #000;
+  border-radius: 0 5px 0 0;
+  background: #151515;
+  box-shadow: inset 0 0 10px #000;
   animation: animate 1.2s ease-in-out forwards;
 }
-/* .skill_content:hover .skill_item {
-  opacity: 0.8;
-} */
 .skill_content .skill_item:hover {
   opacity: 1;
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 @keyframes animate {
   from {
-    width: 0;
+    width: 100%;
   }
 }
 
@@ -172,6 +177,9 @@
 @media (max-width: 768px) {
   .main_content {
     display: block;
+  }
+  .side_menu_container {
+    max-width: 100%;
   }
   .side_menu_container {
     display: block;

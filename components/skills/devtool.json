@@ -3,37 +3,37 @@
   "contents": [
     {
       "name": "Git/GitHub",
-      "percent": "75%",
+      "level": 3,
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
       "name": "Figma",
-      "percent": "75%",
+      "level": 2,
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "Unity",
-      "percent": "40%",
+      "level": 2,
       "clr_start": "#ffee54",
       "clr_end": "#ff00ca"
     },
     {
       "name": "AWS",
-      "percent": "20%",
+      "level": 2,
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "Docker",
-      "percent": "75%",
+      "level": 2,
       "clr_start": "#ffee54",
       "clr_end": "#ff00ca"
     },
     {
       "name": "Firebase",
-      "percent": "20%",
+      "level": 2,
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     }
