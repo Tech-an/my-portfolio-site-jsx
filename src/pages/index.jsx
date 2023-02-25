@@ -9,20 +9,15 @@ import Blog from "./blog";
 import ProgressBar from "components/progressbar/progressbar";
 
 import styles from "../styles/index.module.css";
-import CareerUpgrade from "components/careerUpgrade/career-upgrade";
 
 export default function Index() {
   return (
     <div>
-      {/* <CareerUpgrade />
-      <Career /> */}
-
       <Layout>
         <Home />
         <section className={styles.container}>
           <About />
-          {/* <Career /> */}
-          <CareerUpgrade />
+          <Career />
           <Skills />
           <Works />
           <Blog />
