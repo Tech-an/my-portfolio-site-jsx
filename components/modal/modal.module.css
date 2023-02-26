@@ -1,0 +1,32 @@
+.modal_bg {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.mask {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.modal_container {
+  height: 80%;
+  width: 80%;
+  z-index: 100;
+  background-color: rgb(250, 250, 250);
+}
+
+.modal_content {
+  margin: 20px 40px;
+}

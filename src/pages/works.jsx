@@ -1,24 +1,45 @@
 import styles from "../styles/works.module.css";
 import Image from "next/image";
-import portfolio from "../../public/portfolio.jpg";
-import quizApp from "../../public/quizApp.jpg";
-import unityGame from "../../public/unitygame.jpg";
 
-import { Paper } from "@mui/material";
+import Modal from "components/modal/modal";
+import workData from "../../components/works/works.json";
 
 import { useState } from "react";
 
 export default function Works() {
-  const workItem = (title, text, imgSrc, modal_text, dev) => {
+  const [showModal, setShowModal] = useState(false);
+  const [modalContent, setModalContent] = useState({});
+
+  const workItem = ({
+    title,
+    text,
+    img_path,
+    img_width,
+    img_height,
+    grid_column,
+    grid_row,
+    about_app,
+    about_dev,
+  }) => {
     return (
       <div
         className={styles.box}
         onClick={() => {
-          toggleModal({ title, modal_text, dev });
+          setModalContent({ title, about_app, about_dev });
+          setShowModal(true);
+        }}
+        style={{
+          "grid-column": `span ${grid_column}`,
+          "grid-row": `span ${grid_row}`,
         }}
       >
         <div className={styles.content}>
-          <Image src={imgSrc} alt="portfolio-site" />
+          <Image
+            src={img_path}
+            alt="portfolio-site"
+            width={img_width}
+            height={img_height}
+          />
           <p>{title}</p>
           <p className={styles.description}>{text}</p>
         </div>
@@ -26,37 +47,8 @@ export default function Works() {
     );
   };
 
-  const [showModal, setShowModal] = useState(false);
-  const [modalContent, setModalContent] = useState("");
-  const toggleModal = (modal_content) => {
-    if (showModal) {
-      closeModal();
-    } else {
-      openModal();
-      setModalContent(modal_content);
-    }
-    setShowModal(!showModal);
-  };
-  const openModal = () => {
-    window.document.body.style.overflow = "hidden";
-  };
-  const closeModal = () => {
-    window.document.body.style.overflow = "auto";
-  };
-  const modal = () => {
-    return (
-      <div className={styles.modal_bg}>
-        <Paper elevation={3} className={styles.modal_container}>
-          <div className={styles.modal_content}>
-            <h2>{modalContent.title}</h2>
-            <p>{modalContent.modal_text}</p>
-            <p>{modalContent.dev}</p>
-            <button onClick={toggleModal}>Close</button>
-          </div>
-        </Paper>
-        <div className={styles.mask} onClick={toggleModal}></div>
-      </div>
-    );
+  const workContents = () => {
+    return workData.map((data) => workItem(data));
   };
 
   return (
@@ -64,18 +56,12 @@ export default function Works() {
       <h1 className={`${styles.title} ${styles.sticky}`}>
         <span>W</span>orks
       </h1>
-      <div className="app">{showModal && modal()}</div>
-      <div className={styles.grid_container}>
-        {workItem(
-          "ポートフォリオサイト",
-          "- 現在制作中です -",
-          portfolio,
-          "Next.jsをベースにHTML,CSS,JavaScripを駆使して制作しました。",
-          "HTML/CSS/JavaScript/React/Next.js/Vercel"
+      <div className="app">
+        {showModal && (
+          <Modal modalContent={modalContent} setShowModal={setShowModal} />
         )}
-        {workItem("県章クイズアプリ", "- 現在制作中です -", quizApp)}
-        {workItem("サイドビューゲーム(Unity)", "- 現在制作中です -", unityGame)}
       </div>
+      <div className={styles.grid_container}>{workContents()}</div>
     </div>
   );
 }
