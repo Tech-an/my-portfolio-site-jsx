@@ -8,12 +8,15 @@ import Play from "./play";
 import Blog from "./blog";
 import ProgressBar from "components/progressbar/progressbar";
 
+import Accordion from "components/accordion/accordion";
+
 import styles from "../styles/index.module.css";
 
 export default function Index() {
   return (
     <div>
-      <Layout>
+      <Accordion />
+      {/* <Layout>
         <Home />
         <section className={styles.container}>
           <About />
@@ -24,7 +27,7 @@ export default function Index() {
           <Play />
         </section>
         <ProgressBar />
-      </Layout>
+      </Layout> */}
     </div>
   );
 }
