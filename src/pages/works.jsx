@@ -20,12 +20,13 @@ export default function Works() {
     grid_row,
     about_app,
     about_dev,
+    imgs,
   }) => {
     return (
       <div
         className={styles.box}
         onClick={() => {
-          setModalContent({ title, about_app, about_dev });
+          setModalContent({ title, about_app, about_dev, imgs });
           setShowModal(true);
         }}
         style={{
