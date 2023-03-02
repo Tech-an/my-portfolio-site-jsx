@@ -14,7 +14,7 @@ export default function Skills() {
   // sideMenu
   const sideMenuItem = (title, items) => {
     return (
-      <div className={styles.menu_item}>
+      <div className={styles.menu_item} key={title}>
         <p
           key={title}
           style={{
