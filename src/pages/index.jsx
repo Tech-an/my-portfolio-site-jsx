@@ -17,7 +17,7 @@ export default function Index() {
     <div>
       {/* <Accordion /> */}
       <Layout>
-        {/* <Home /> */}
+        <Home />
         <section className={styles.container}>
           <About />
           <Career />
