@@ -40,7 +40,7 @@ export default function Works() {
             width={img_width}
             height={img_height}
           />
-          <p>{title}</p>
+          <p className={styles.content_title}>{title}</p>
           <p className={styles.description}>{text}</p>
         </div>
       </div>

@@ -4,6 +4,7 @@ import backend from "../../components/skills/backend.json";
 import devtool from "../../components/skills/devtool.json";
 import english from "../../components/skills/english.json";
 import { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faSolidStar } from "@fortawesome/free-solid-svg-icons";
@@ -26,15 +27,17 @@ export default function Skills() {
           {title}
         </p>
         <ul>
-          {items.map((item) => (
-            <li
-              key={item.name}
-              onClick={() => setSkill(item.json)}
-              className={styles.menu_item_title}
-            >
-              {item.name}
-            </li>
-          ))}
+          <Link to="Skills">
+            {items.map((item) => (
+              <li
+                key={item.name}
+                onClick={() => setSkill(item.json)}
+                className={styles.menu_item_title}
+              >
+                {item.name}
+              </li>
+            ))}
+          </Link>
         </ul>
       </div>
     );

@@ -63,9 +63,17 @@
   max-height: 250px;
   margin-bottom: 10px;
 }
-
+.box .content {
+  width: 100%;
+}
+.box .content_title {
+  border-bottom: #00dc82 solid 2px;
+  /* margin-bottom: 15px; */
+  width: 80%;
+  margin: 0 auto 15px;
+}
 .box .description {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 /* .grid_container .box:nth-child(1) {
