@@ -32,6 +32,7 @@ export default function Works() {
           "grid-column": `span ${grid_column}`,
           "grid-row": `span ${grid_row}`,
         }}
+        key={title}
       >
         <div className={styles.content}>
           <Image

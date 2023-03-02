@@ -15,8 +15,8 @@ import styles from "../styles/index.module.css";
 export default function Index() {
   return (
     <div>
-      <Accordion />
-      {/* <Layout>
+      {/* <Accordion /> */}
+      <Layout>
         <Home />
         <section className={styles.container}>
           <About />
@@ -27,7 +27,7 @@ export default function Index() {
           <Play />
         </section>
         <ProgressBar />
-      </Layout> */}
+      </Layout>
     </div>
   );
 }
