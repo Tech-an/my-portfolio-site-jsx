@@ -1,0 +1,29 @@
+{
+  "title": "バックエンド",
+  "contents": [
+    {
+      "name": "Python",
+      "level": 4,
+      "clr_start": "#1fe6ff",
+      "clr_end": "#673AB7"
+    },
+    {
+      "name": "C",
+      "level": 3,
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "C#",
+      "level": 1,
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "Java",
+      "level": 2,
+      "clr_start": "#ffee54",
+      "clr_end": "#ff00ca"
+    }
+  ]
+}

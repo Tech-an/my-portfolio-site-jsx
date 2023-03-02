@@ -1,0 +1,116 @@
+.container {
+  background: url(../../public/works.jpg);
+  /* background: rgba(120, 120, 120, 0.2); */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  /* background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: lighten; */
+  min-height: 100vh;
+}
+.title {
+  text-align: center;
+}
+.sticky {
+  padding: 10px;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--subClr);
+  color: #dfdfdf;
+  font-size: calc(var(--heading1) * 0.7);
+  letter-spacing: 3px;
+}
+.sticky span {
+  color: #00dc82;
+  filter: drop-shadow(0 0 25px #00dc82);
+  font-size: calc(var(--heading1) * 1.2);
+}
+
+.grid_container {
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto-fill);
+  padding: 50px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+
+.grid_container .box {
+  background: #333;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  background-blend-mode: lighten;
+  padding: 20px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+}
+.grid_container .box:hover {
+  background: #00dc82;
+}
+.grid_container .box img {
+  position: relative;
+  width: auto;
+  max-width: 80%;
+  height: auto;
+  max-height: 250px;
+  margin-bottom: 10px;
+}
+.box .content {
+  width: 100%;
+}
+.box .content_title {
+  border-bottom: #00dc82 solid 2px;
+  /* margin-bottom: 15px; */
+  width: 80%;
+  margin: 0 auto 15px;
+}
+.box .description {
+  font-size: 0.9rem;
+}
+
+/* .grid_container .box:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.grid_container .box:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.grid_container .box:nth-child(3) {
+  grid-column: span 1;
+  grid-row: span 1;
+} */
+
+.grid_container p {
+  overflow-wrap: break-word;
+  word-wrap: break-word; /* overflow-wrap のエイリアス */
+  max-width: 100%; /* 親要素の幅に合わせてテキストを折り返す */
+}
+
+@media (min-width: 1530px) {
+  .grid_container .box:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+@media (max-width: 880px) {
+  .grid_container {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+  }
+  .grid_container .box {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+  .grid_container .box img {
+    max-height: 150px;
+  }
+}

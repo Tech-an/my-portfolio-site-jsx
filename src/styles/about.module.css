@@ -1,0 +1,86 @@
+.container {
+  position: relative;
+  height: 100%;
+  background: url(../../public/background1.avif) repeat;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+}
+
+.title {
+  text-align: center;
+}
+
+.sticky {
+  padding: 10px;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--subClr);
+  /* color: #00ade1; */
+  /* color: rgba(0, 172, 224, 0.8); */
+  color: #dfdfdf;
+  font-size: calc(var(--heading1) * 0.7);
+  letter-spacing: 3px;
+}
+.sticky span {
+  color: #00ade1;
+  filter: drop-shadow(0 0 25px #00ade1);
+  font-size: calc(var(--heading1) * 1.2);
+}
+
+.profile {
+  height: 100%;
+  padding: 60px 5% 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.img {
+  max-width: 400px;
+  width: clamp(200px, 70%, 400px);
+  height: auto;
+  border-radius: 40%;
+}
+
+.profile .text {
+  width: clamp(300px, 100%, 100%);
+}
+
+.profile .text div {
+  margin-top: 30px;
+}
+
+/* タブレット用のスタイル */
+@media (max-width: 768px) {
+  .container {
+    /* padding: 100px 0; */
+  }
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .profile .text {
+    text-align: center;
+  }
+  .profile .text h2,
+  .profile .text h3 {
+    padding: 0 10px;
+  }
+  .profile .text p {
+    padding: 0 20px;
+  }
+  /* .arrowdown {
+    display: none;
+  } */
+}

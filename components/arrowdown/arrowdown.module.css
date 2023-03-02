@@ -1,0 +1,22 @@
+/* ページのトップに矢印を表示 */
+.arrowdown {
+  position: absolute;
+  bottom: 10%;
+  left: calc(50% - 26px);
+  font-size: 52px;
+  animation: scroll-down 2.5s infinite ease-in-out;
+  cursor: pointer;
+}
+
+/* スクロールアニメーションを定義 */
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
