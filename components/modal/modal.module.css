@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 100000;
 }
 
 .mask {
@@ -29,6 +29,7 @@
   border-radius: 15px;
   padding: 40px 10px 40px 40px;
   position: relative;
+  overflow: auto;
 }
 
 .close_button {
@@ -114,4 +115,31 @@
 .selected {
   /* border: 2px solid #00dc82; */
   box-shadow: 0px 0px 10px 3px #00dc82;
+}
+
+@media (max-width: 880px) {
+  .modal_container {
+    padding: 40px;
+  }
+  .modal_content {
+    display: block;
+  }
+  .modal_content .text {
+    width: 100%;
+  }
+  .modal_content .imgs {
+    width: 100%;
+  }
+}
+@media (max-width: 440px) {
+  .close_button {
+    top: -5px;
+    right: 5px;
+  }
+  .modal_container {
+    padding: 40px 20px;
+  }
+  .modal_content .main_img {
+    padding: 0 0 30px 0;
+  }
 }

@@ -63,6 +63,24 @@ export default function Modal({ modalContent, setShowModal }) {
       </div>
     );
   };
+  const devContainer = (contents) => {
+    return contents.map(({ title, text, icon }) => {
+      const icons = { devtool: faWrench, date: faClock };
+      return (
+        <div className={styles.dev} key={text}>
+          <div className={styles.dev_content}>
+            <p className={styles.dev_title}>
+              {"< "}
+              <FontAwesomeIcon icon={icons[icon]} />
+              {` ${title} >`}
+              <br />
+            </p>
+            <p className={styles.dev_text}>{text}</p>
+          </div>
+        </div>
+      );
+    });
+  };
   return (
     <div className={styles.contaner}>
       <div className={styles.modal_bg}>
@@ -73,27 +91,8 @@ export default function Modal({ modalContent, setShowModal }) {
           <div className={styles.modal_content}>
             <div className={styles.text}>
               <h2>{modalContent.title}</h2>
-              <p>{modalContent.about_app}</p>
-              <p className={styles.dev}>
-                <div className={styles.dev_content}>
-                  <p className={styles.dev_title}>
-                    {"< "}
-                    <FontAwesomeIcon icon={faWrench} />
-                    {" 開発言語 >"}
-                    <br />
-                  </p>
-                  <p className={styles.dev_text}>{modalContent.about_dev}</p>
-                </div>
-                <div className={styles.dev_content}>
-                  <p className={styles.dev_title}>
-                    {"< "}
-                    <FontAwesomeIcon icon={faClock} />
-                    {" 開発期間 >"}
-                    <br />
-                  </p>
-                  <p className={styles.dev_text}>{"2023/2/17 - 2023/3/3"}</p>
-                </div>
-              </p>
+              <p>{modalContent.text}</p>
+              {devContainer(modalContent.about)}
             </div>
             {imgContainer(modalContent.imgs)}
           </div>
