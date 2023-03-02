@@ -1,4 +1,4 @@
-import styles from "/src/styles/home.module.css";
+import styles from "../styles/home.module.css";
 import ArrowDown from "components/arrowdown/arrowdown";
 
 export default function Home() {
