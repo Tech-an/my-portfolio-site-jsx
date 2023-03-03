@@ -15,6 +15,8 @@ import {
   faCircleChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
 
+import Accordion from "components/accordion/accordion";
+
 export default function Skills() {
   // sideMenu
   const [hidden, setHidden] = useState(true);
@@ -117,44 +119,41 @@ export default function Skills() {
   const skillItem = (
     name,
     level,
-    // gradient_start = "#1fe6ff",
-    gradient_start = "#FAD961",
-    // gradient_end = "#673AB7"
-    gradient_end = "#ff3b00"
+    text
+    // gradient_start = "#FAD961",
+    // gradient_end = "#ff3b00"
   ) => {
     return (
       <div className={styles.skill_item} key={name}>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-start",
-            paddingBottom: "5px",
-          }}
-        >
-          <span className={styles.name}>&nbsp;{name}&nbsp;&nbsp;</span>
-          {/* <div className={styles.value}>lv.{level}</div> */}
-          <div className={styles.value}>
-            {starContent(level).map((star, index) => (
-              <span key={index}>{star}</span>
-            ))}
-          </div>
-        </div>
-        <div
-          className={styles.percent}
-          style={{
-            "--clr_start": "#ffdd1c",
-            "--clr_end": "#ff3b00",
-          }}
-        >
+        <Accordion text={text}>
           <div
-            className={styles.progress}
             style={{
-              width: `calc(100% - ${level}/5*100%)`,
+              display: "flex",
+              justifyContent: "flex-start",
+              paddingBottom: "5px",
+            }}
+          >
+            <span className={styles.name}>&nbsp;{name}&nbsp;&nbsp;</span>
+            <div className={styles.value}></div>
+          </div>
+          <div
+            className={styles.percent}
+            style={{
               "--clr_start": "#ffdd1c",
               "--clr_end": "#ff3b00",
             }}
-          ></div>
-        </div>
+          >
+            {starContent(5)}
+            <div
+              className={styles.progress}
+              style={{
+                width: `calc(100% - ${level}/5*100%)`,
+                "--clr_start": "#ffdd1c",
+                "--clr_end": "#ff3b00",
+              }}
+            ></div>
+          </div>
+        </Accordion>
       </div>
     );
   };
@@ -167,8 +166,9 @@ export default function Skills() {
             return skillItem(
               content.name,
               content.level,
-              content.clr_start,
-              content.clr_end
+              content.text
+              // content.clr_start,
+              // content.clr_end
             );
           })}
         </div>

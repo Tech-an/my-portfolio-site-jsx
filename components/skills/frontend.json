@@ -4,48 +4,56 @@
     {
       "name": "HTML",
       "level": 3,
+      "text": "独学(3年) , GeekSalonのWebExpertコース修了 , 大学でTeaching-Assistantの経験あり",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
       "name": "CSS",
       "level": 3,
-      "clr_start": "#3bc0ff",
-      "clr_end": "#33ff00"
-    },
-    {
-      "name": "SASS",
-      "level": 1,
+      "text": "独学(3年) , GeekSalonのWebExpertコース修了 , 大学でTeaching-Assistantの経験あり",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "JavaScript",
       "level": 4,
+      "text": "独学(3年) , GeekSalonのWebExpertコース修了 , 大学でTeaching-Assistantの経験あり",
       "clr_start": "#ffee54",
       "clr_end": "#ff00ca"
     },
     {
-      "name": "TypeScript",
-      "level": 1,
-      "clr_start": "#3bc0ff",
-      "clr_end": "#33ff00"
-    },
-    {
       "name": "React",
       "level": 3,
+      "text": "独学(1年) , 大学でTeaching-Assistantの経験あり",
       "clr_start": "#22ffde",
       "clr_end": "#2196F3"
     },
     {
       "name": "Next.js",
       "level": 3,
+      "text": "独学(半年) , ポートフォリオサイト制作に利用",
       "clr_start": "#22ffde",
       "clr_end": "#2196F3"
     },
     {
+      "name": "TypeScript",
+      "level": 1,
+      "text": "独学(1カ月) , まだまだ実用レベルではない",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "SASS",
+      "level": 1,
+      "text": "独学(1カ月) , まだまだ実用レベルではない",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
       "name": "ReactNative",
       "level": 2,
+      "text": "独学(1カ月) , まだまだ実用レベルではない",
       "clr_start": "#22ffde",
       "clr_end": "#2196F3"
     }

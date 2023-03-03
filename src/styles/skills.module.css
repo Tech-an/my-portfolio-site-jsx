@@ -3,8 +3,10 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  background-color: rgba(255, 255, 255, 0.2);
-  background-blend-mode: lighten;
+  /* background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: lighten; */
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
 }
 .title {
   text-align: center;
@@ -103,12 +105,13 @@
   width: 40%;
   min-width: 250px;
   margin: 10px 20px;
-  padding: 15px 10px 12px;
+  padding: 15px 10px 5px;
   background: linear-gradient(#616161 0%, #333 10%, #222);
   border-radius: 8px;
   overflow: hidden;
   border: 2px solid #000;
   transition: 0.5s;
+  height: 100%;
 }
 .skill_item:before {
   content: "";
@@ -116,7 +119,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 44%;
   background: rgba(255, 255, 255, 0.1);
   z-index: 10;
 }
@@ -139,20 +142,34 @@
 }
 .skill_item .percent {
   position: relative;
-  height: 20px;
-  margin: 0;
+  /* height: 20px; */
+  height: 30px;
+  padding: 18px 0 18px 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   border-radius: 5px;
-  /* background: linear-gradient(45deg, var(--clr_start), var(--clr_end)); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     45deg,
-    #ffc800,
+    #ffa600,
     #ffa900,
     #ff5700,
     #f94e00,
     #f90404
   );
+  background: -webkit-linear-gradient(
+    45deg,
+    #ffa600,
+    #ffa900,
+    #ff5700,
+    #f94e00,
+    #f90404
+  ); */
   box-shadow: inset 0 0 10px #000;
   overflow: hidden;
+  font-size: 1.6rem;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 .skill_item .progress {
   position: absolute;

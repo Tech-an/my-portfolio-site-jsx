@@ -15,9 +15,7 @@ import styles from "../styles/index.module.css";
 export default function Index() {
   return (
     <div>
-      {/* <Accordion /> */}
       <Layout>
-        {/* <Home /> */}
         <section className={styles.container}>
           <About />
           <Career />

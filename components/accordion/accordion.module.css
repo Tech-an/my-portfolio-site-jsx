@@ -1,0 +1,46 @@
+.accordion {
+  position: relative;
+  z-index: 10;
+}
+
+.accordion .contentBx .label {
+  position: relative;
+  padding: 0 10px 10px;
+  /* background: #2694af; */
+  /* background: #ffdd1c; */
+  color: #fff;
+  cursor: pointer;
+}
+
+.accordion .contentBx .label::before {
+  font-weight: 900;
+  content: "+";
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 2em;
+}
+
+.accordion .contentBx .active .label::before {
+  content: "－";
+}
+
+.accordion .contentBx .content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  overflow: hidden;
+}
+
+.accordion .contentBx .active .content {
+  height: 150px;
+  padding: 10px;
+  margin: 5px 0 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
