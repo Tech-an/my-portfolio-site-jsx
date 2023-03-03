@@ -1,9 +1,10 @@
 /* ページのトップに矢印を表示 */
 .arrowdown {
   position: absolute;
-  bottom: 8%;
-  left: calc(50% - 26px);
-  font-size: 52px;
+  bottom: 10%;
+  left: calc(50% - 30px);
+  /* left: calc(33%); */
+  font-size: 60px;
   animation: scroll-down 2.5s infinite ease-in-out;
   cursor: pointer;
 }
