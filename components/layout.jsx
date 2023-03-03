@@ -26,8 +26,8 @@ export default function Layout({ children }) {
     return (
       <div className={styles.side_nav_handler}>
         <FontAwesomeIcon
-          icon={hidden ? faBars : faXmark}
-          onClick={() => setHidden(!hidden)}
+          icon={hidden ? faBars : null}
+          onClick={() => setHidden(false)}
         />
       </div>
     );
@@ -37,14 +37,14 @@ export default function Layout({ children }) {
     <div>
       <Home />
       <div className={styles.container}>
-        <div className={isMobile && hidden ? styles.hidden : null}>
-          <SideNav />
-        </div>
         <main className={styles.main_container}>
           {isMobile ? sideNavHandler() : null}
           {children}
           <Footer />
         </main>
+        <div className={isMobile && hidden ? styles.hidden : null}>
+          <SideNav hidden={hidden} setHidden={setHidden} />
+        </div>
       </div>
     </div>
   );

@@ -120,7 +120,10 @@
 }
 
 @media (max-width: 500px) {
-  .title > h1 {
+  .container {
+    padding: 15px 13px 0 13px;
+  }
+  /* .title > h1 {
     letter-spacing: 9px;
     font-size: calc(var(--heading1) * 0.7);
   }
@@ -129,7 +132,7 @@
     margin-top: 20px;
     font-weight: 600;
     font-size: var(--heading3) * 0.5;
-  }
+  } */
 
   .title {
     flex-direction: column;
@@ -138,18 +141,18 @@
   .title_first {
     transform: translateX(0);
     width: 100%;
-    font-size: 15vw;
+    font-size: 13vw;
     flex: 1;
     line-height: 10vh;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding: 35% 10px 3%;
+    padding: 35% 20px 0;
   }
 
   .title_second {
-    font-size: 15vw;
+    font-size: 13vw;
     flex: 2;
     line-height: 10vh;
     /* transform: translate(80px, -50px); */

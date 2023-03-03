@@ -17,7 +17,7 @@ import {
 
 export default function Skills() {
   // sideMenu
-  const [hidden, setHidden] = useState(false);
+  const [hidden, setHidden] = useState(true);
   const [isTwoColumn, setIsTwoColumn] = useState(false);
 
   useEffect(() => {

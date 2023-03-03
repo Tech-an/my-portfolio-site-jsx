@@ -8,10 +8,16 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
-export default function SideNav() {
+export default function SideNav({ hidden, setHidden }) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${hidden ? styles.hidden : null}`}>
+      <FontAwesomeIcon
+        icon={faXmark}
+        onClick={() => setHidden(true)}
+        className={styles.close_button}
+      />
       <div className={styles.logo}>
         <Link to="Home" spy={true} smooth={true} duration={500}>
           <Image
