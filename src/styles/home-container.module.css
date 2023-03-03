@@ -1,7 +1,7 @@
 .container {
   position: relative;
   z-index: 10000;
-  padding: 10px 10px 0 0;
+  padding: 10px 10px 0 10px;
   /* background-color: var(--mainClr); */
   background-color: var(--subClr);
 }
