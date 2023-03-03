@@ -27,7 +27,7 @@ export default function About() {
           </div>
         </div>
         <div className={styles.arrowdown}>
-          <ArrowDown id="Career" clr="black" />
+          {/* <ArrowDown id="Career" clr="black" /> */}
         </div>
         {/* </Paper> */}
       </div>

@@ -2,3 +2,32 @@
   display: flex;
   position: relative;
 }
+.hidden {
+  display: none;
+}
+.main_container {
+  width: 100%;
+  position: relative;
+}
+
+.side_nav_handler {
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  transform: translate(-20px, 20px);
+  color: #fff;
+  font-size: 2rem;
+  z-index: 10000;
+  height: 0;
+  text-align: right;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.side_nav_handler:hover {
+  opacity: 0.6;
+}
+@media (max-width: 500px) {
+  .side_nav_handler {
+    font-size: 1.5rem;
+  }
+}

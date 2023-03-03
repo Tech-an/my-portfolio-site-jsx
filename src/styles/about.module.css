@@ -32,7 +32,7 @@
 
 .profile {
   height: 100%;
-  padding: 60px 5% 150px;
+  padding: 60px 5%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
