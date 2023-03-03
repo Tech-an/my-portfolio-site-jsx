@@ -31,10 +31,9 @@ export default function Layout({ children }) {
           isMobile ? styles.mobile : null
         }`}
       >
-        <FontAwesomeIcon
-          icon={hidden ? faBars : null}
-          onClick={() => setHidden(false)}
-        />
+        {hidden ? (
+          <FontAwesomeIcon icon={faBars} onClick={() => setHidden(false)} />
+        ) : null}
       </div>
     );
   };
@@ -47,7 +46,7 @@ export default function Layout({ children }) {
           <SideNav
             hidden={!isWidePC && hidden}
             setHidden={setHidden}
-            isWidePc={isWidePC}
+            isWidePC={isWidePC}
           />
         </div>
         <main className={styles.main_container}>

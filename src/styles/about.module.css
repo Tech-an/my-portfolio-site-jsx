@@ -230,7 +230,7 @@
 }
 @media (max-width: 500px) {
   .like_content {
-    min-width: 270px;
+    min-width: 250px;
   }
   .like_description .like_title::before,
   .like_description .like_title::after {
