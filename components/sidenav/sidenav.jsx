@@ -10,15 +10,17 @@ import {
 import { Link } from "react-scroll";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
-export default function SideNav({ hidden, setHidden }) {
+export default function SideNav({ hidden, setHidden, isWidePC }) {
   if (!hidden)
     return (
       <div className={styles.container}>
-        <FontAwesomeIcon
-          icon={faXmark}
-          onClick={() => setHidden(true)}
-          className={styles.close_button}
-        />
+        {isWidePC ? (
+          <FontAwesomeIcon
+            icon={faXmark}
+            onClick={() => setHidden(true)}
+            className={styles.close_button}
+          />
+        ) : null}
         <div className={styles.logo}>
           <Link to="Home" spy={true} smooth={true} duration={500}>
             <Image

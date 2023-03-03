@@ -11,10 +11,12 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 export default function Layout({ children }) {
   const [hidden, setHidden] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [isWidePC, setIsWidePC] = useState(false);
 
   useEffect(() => {
     function handleResize() {
       setIsMobile(window.innerWidth < 500);
+      setIsWidePC(window.innerWidth > 1000);
     }
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -41,11 +43,15 @@ export default function Layout({ children }) {
     <div>
       <Home />
       <div className={`${styles.container} ${isMobile ? styles.mobile : null}`}>
-        <div className={hidden ? styles.hidden : null}>
-          <SideNav hidden={hidden} setHidden={setHidden} />
+        <div className={!isWidePC && hidden ? styles.hidden : null}>
+          <SideNav
+            hidden={!isWidePC && hidden}
+            setHidden={setHidden}
+            isWidePc={isWidePC}
+          />
         </div>
         <main className={styles.main_container}>
-          {sideNavHandler()}
+          {isWidePC ? null : sideNavHandler()}
           {children}
           <Footer />
         </main>
