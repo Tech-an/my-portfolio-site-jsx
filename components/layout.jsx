@@ -6,7 +6,7 @@ import Home from "@/pages/home";
 
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Layout({ children }) {
   const [hidden, setHidden] = useState(true);
@@ -14,7 +14,7 @@ export default function Layout({ children }) {
 
   useEffect(() => {
     function handleResize() {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 500);
     }
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -24,10 +24,14 @@ export default function Layout({ children }) {
   }, []);
   const sideNavHandler = () => {
     return (
-      <div className={styles.side_nav_handler}>
+      <div
+        className={`${styles.side_nav_handler} ${
+          isMobile ? styles.mobile : null
+        }`}
+      >
         <FontAwesomeIcon
-          icon={hidden ? faBars : faXmark}
-          onClick={() => setHidden(!hidden)}
+          icon={hidden ? faBars : null}
+          onClick={() => setHidden(false)}
         />
       </div>
     );
@@ -36,12 +40,12 @@ export default function Layout({ children }) {
   return (
     <div>
       <Home />
-      <div className={styles.container}>
-        <div className={isMobile && hidden ? styles.hidden : null}>
-          <SideNav />
+      <div className={`${styles.container} ${isMobile ? styles.mobile : null}`}>
+        <div className={hidden ? styles.hidden : null}>
+          <SideNav hidden={hidden} setHidden={setHidden} />
         </div>
         <main className={styles.main_container}>
-          {isMobile ? sideNavHandler() : null}
+          {sideNavHandler()}
           {children}
           <Footer />
         </main>

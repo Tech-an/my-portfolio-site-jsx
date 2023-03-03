@@ -22,7 +22,7 @@ export default function Home() {
     <div
       className={styles.container}
       id="Home"
-      onClick={() => setIsEffect(!isEffect)}
+      // onClick={() => setIsEffect(!isEffect)}
     >
       <div className={styles.slideshow}>
         <div className={styles.title}>
