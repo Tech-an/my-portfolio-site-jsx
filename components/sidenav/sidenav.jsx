@@ -14,13 +14,13 @@ export default function SideNav({ hidden, setHidden, isWidePC }) {
   if (!hidden)
     return (
       <div className={styles.container}>
-        {isWidePC ? (
+        {isWidePC ? null : (
           <FontAwesomeIcon
             icon={faXmark}
             onClick={() => setHidden(true)}
             className={styles.close_button}
           />
-        ) : null}
+        )}
         <div className={styles.logo}>
           <Link to="Home" spy={true} smooth={true} duration={500}>
             <Image
