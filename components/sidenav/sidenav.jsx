@@ -7,124 +7,125 @@ import {
   faTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function SideNav({ hidden, setHidden }) {
-  return (
-    <div className={`${styles.container} ${hidden ? styles.hidden : null}`}>
-      <FontAwesomeIcon
-        icon={faXmark}
-        onClick={() => setHidden(true)}
-        className={styles.close_button}
-      />
-      <div className={styles.logo}>
-        <Link to="Home" spy={true} smooth={true} duration={500}>
-          <Image
-            src={Logo}
-            alt="logo"
-            style={{
-              width: "90%",
-              maxWidth: "130px",
-              height: "auto",
-            }}
-          />
-        </Link>
-      </div>
-      <div className={styles.nav}>
-        <nav>
+  if (!hidden)
+    return (
+      <div className={styles.container}>
+        <FontAwesomeIcon
+          icon={faXmark}
+          onClick={() => setHidden(true)}
+          className={styles.close_button}
+        />
+        <div className={styles.logo}>
+          <Link to="Home" spy={true} smooth={true} duration={500}>
+            <Image
+              src={Logo}
+              alt="logo"
+              style={{
+                width: "90%",
+                maxWidth: "130px",
+                height: "auto",
+              }}
+            />
+          </Link>
+        </div>
+        <div className={styles.nav}>
+          <nav>
+            <ul>
+              <li style={{ "--clr": "#00ade1" }}>
+                <Link
+                  to="About"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  data-text="&nbsp;&nbsp;About&nbsp;"
+                >
+                  &nbsp;&nbsp;About&nbsp;
+                </Link>
+              </li>
+              <li style={{ "--clr": "#ff6493" }}>
+                <Link
+                  to="Career"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  data-text="&nbsp;&nbsp;Career&nbsp;"
+                >
+                  &nbsp;&nbsp;Career&nbsp;
+                </Link>
+              </li>
+              <li style={{ "--clr": "#ffdd1c" }}>
+                <Link
+                  to="Skills"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  data-text="&nbsp;&nbsp;Skills&nbsp;"
+                >
+                  &nbsp;&nbsp;Skills&nbsp;
+                </Link>
+              </li>
+              <li style={{ "--clr": "#00dc82" }}>
+                <Link
+                  to="Works"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  data-text="&nbsp;&nbsp;Works&nbsp;"
+                >
+                  &nbsp;&nbsp;Works&nbsp;
+                </Link>
+              </li>
+              <li style={{ "--clr": "#dc00d4" }}>
+                <Link
+                  // to="Play"
+                  to="Blog"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  // data-text="&nbsp;&nbsp;Play&nbsp;"
+                  data-text="&nbsp;&nbsp;Blog&nbsp;"
+                >
+                  &nbsp;&nbsp;Blog&nbsp;
+                  {/* &nbsp;&nbsp;Play&nbsp; */}
+                </Link>
+              </li>
+              <li style={{ "--clr": "#7700e2" }}>
+                <Link
+                  to="Play"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  data-text="&nbsp;&nbsp;Play&nbsp;"
+                >
+                  &nbsp;&nbsp;Play&nbsp;
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div className={styles.sns}>
           <ul>
-            <li style={{ "--clr": "#00ade1" }}>
-              <Link
-                to="About"
-                spy={true}
-                smooth={true}
-                duration={500}
-                data-text="&nbsp;&nbsp;About&nbsp;"
-              >
-                &nbsp;&nbsp;About&nbsp;
-              </Link>
+            <li>
+              <a href="https://www.instagram.com/teechan.s/">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
             </li>
-            <li style={{ "--clr": "#ff6493" }}>
-              <Link
-                to="Career"
-                spy={true}
-                smooth={true}
-                duration={500}
-                data-text="&nbsp;&nbsp;Career&nbsp;"
-              >
-                &nbsp;&nbsp;Career&nbsp;
-              </Link>
+            <li>
+              <a href="#About">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
             </li>
-            <li style={{ "--clr": "#ffdd1c" }}>
-              <Link
-                to="Skills"
-                spy={true}
-                smooth={true}
-                duration={500}
-                data-text="&nbsp;&nbsp;Skills&nbsp;"
-              >
-                &nbsp;&nbsp;Skills&nbsp;
-              </Link>
-            </li>
-            <li style={{ "--clr": "#00dc82" }}>
-              <Link
-                to="Works"
-                spy={true}
-                smooth={true}
-                duration={500}
-                data-text="&nbsp;&nbsp;Works&nbsp;"
-              >
-                &nbsp;&nbsp;Works&nbsp;
-              </Link>
-            </li>
-            <li style={{ "--clr": "#dc00d4" }}>
-              <Link
-                // to="Play"
-                to="Blog"
-                spy={true}
-                smooth={true}
-                duration={500}
-                // data-text="&nbsp;&nbsp;Play&nbsp;"
-                data-text="&nbsp;&nbsp;Blog&nbsp;"
-              >
-                &nbsp;&nbsp;Blog&nbsp;
-                {/* &nbsp;&nbsp;Play&nbsp; */}
-              </Link>
-            </li>
-            <li style={{ "--clr": "#7700e2" }}>
-              <Link
-                to="Play"
-                spy={true}
-                smooth={true}
-                duration={500}
-                data-text="&nbsp;&nbsp;Play&nbsp;"
-              >
-                &nbsp;&nbsp;Play&nbsp;
-              </Link>
+            <li>
+              <a href="#About">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
-      <div className={styles.sns}>
-        <ul>
-          <li>
-            <a href="https://www.instagram.com/teechan.s/">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-          </li>
-          <li>
-            <a href="#About">
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-          </li>
-          <li>
-            <a href="#About">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
+    );
 }
