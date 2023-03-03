@@ -88,6 +88,7 @@
 }
 .description {
   margin-top: 35px;
+  padding: 0 5px;
 }
 .description > div + div {
   margin-top: 20px;
@@ -162,7 +163,7 @@
   color: #fff;
 }
 .like_content:nth-child(2n) h3 {
-  background: rgb(255, 255, 255);
+  background: rgb(250, 250, 250);
   color: #000;
   border: #000 solid 2px;
 }
@@ -229,7 +230,7 @@
 }
 @media (max-width: 500px) {
   .like_content {
-    width: 350px;
+    min-width: 270px;
   }
   .like_description .like_title::before,
   .like_description .like_title::after {

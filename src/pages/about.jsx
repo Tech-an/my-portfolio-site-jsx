@@ -9,6 +9,7 @@ import {
   faHeart,
   faEnvelope,
   faCheck,
+  faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
 // import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
@@ -27,34 +28,6 @@ export default function About() {
               </li>
             );
           })}
-          {/* <li>
-          <FontAwesomeIcon icon={faCheck} />
-          &nbsp; WordPress
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faCheck} />
-          &nbsp; AWS
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faCheck} />
-          &nbsp; ネイティブアプリ制作
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faCheck} />
-          &nbsp; ゲーム制作
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faCheck} />
-          &nbsp; ブログ制作
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faCheck} />
-          &nbsp; ブロックチェーン
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faCheck} />
-          &nbsp; NFT
-        </li> */}
         </ul>
       </div>
     );
@@ -112,7 +85,7 @@ export default function About() {
         </div>
         <div className={styles.like_description}>
           <div className={styles.like_title}>
-            <FontAwesomeIcon icon={faHeart} />
+            <FontAwesomeIcon icon={faThumbsUp} />
             <span>興味のあること</span>
           </div>
           <div className={styles.like_container}>
