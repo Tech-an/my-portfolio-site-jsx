@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  height: 100dvh;
   width: 20vw;
   max-width: 200px;
   display: flex;
