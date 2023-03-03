@@ -76,19 +76,6 @@
   font-size: 0.9rem;
 }
 
-/* .grid_container .box:nth-child(1) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-.grid_container .box:nth-child(2) {
-  grid-column: span 1;
-  grid-row: span 1;
-}
-.grid_container .box:nth-child(3) {
-  grid-column: span 1;
-  grid-row: span 1;
-} */
-
 .grid_container p {
   overflow-wrap: break-word;
   word-wrap: break-word; /* overflow-wrap のエイリアス */
@@ -105,6 +92,7 @@
   .grid_container {
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     grid-template-rows: minmax(auto, auto);
+    padding: 25px;
   }
   .grid_container .box {
     grid-column: unset !important;
@@ -112,5 +100,13 @@
   }
   .grid_container .box img {
     max-height: 150px;
+  }
+}
+@media (max-width: 500px) {
+  .grid_container {
+    padding: 10px 5px;
+  }
+  .grid_container .box {
+    padding: 20px 10px;
   }
 }

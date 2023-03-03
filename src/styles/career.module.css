@@ -85,7 +85,7 @@
 }
 
 .navigation {
-  padding: 40px 0 180px;
+  padding: 40px 0;
   z-index: 100;
   display: flex;
   justify-content: center;

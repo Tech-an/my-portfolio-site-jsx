@@ -1,7 +1,7 @@
 /* ページのトップに矢印を表示 */
 .arrowdown {
   position: absolute;
-  bottom: 10%;
+  bottom: 8%;
   left: calc(50% - 26px);
   font-size: 52px;
   animation: scroll-down 2.5s infinite ease-in-out;

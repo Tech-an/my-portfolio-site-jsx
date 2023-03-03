@@ -93,7 +93,7 @@ export default function Career() {
           {navItem("研究生", niu, "niu_bg.jpg", NIU)}
           {navItem("大学院", nu, "nu_bg.jpg", NU)}
         </ul>
-        <ArrowDown id="Skills" clr="black" />
+        {/* <ArrowDown id="Skills" clr="black" /> */}
       </section>
     </div>
   );

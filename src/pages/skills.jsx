@@ -3,18 +3,42 @@ import frontend from "../../components/skills/frontend.json";
 import backend from "../../components/skills/backend.json";
 import devtool from "../../components/skills/devtool.json";
 import english from "../../components/skills/english.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
+import ArrowDown from "components/arrowdown/arrowdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faSolidStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faRegularStar } from "@fortawesome/free-regular-svg-icons";
+import {
+  faCircleChevronDown,
+  faCircleChevronUp,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Skills() {
   // sideMenu
+  const [hidden, setHidden] = useState(false);
+  const [isTwoColumn, setIsTwoColumn] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsTwoColumn(window.innerWidth < 768);
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const sideMenuItem = (title, items) => {
     return (
-      <div className={styles.menu_item} key={title}>
+      <div
+        className={`${styles.menu_item} ${
+          isTwoColumn && hidden ? styles.hidden : null
+        }`}
+        key={title}
+      >
         <p
           key={title}
           style={{
@@ -46,10 +70,18 @@ export default function Skills() {
     return (
       <div className={styles.side_menu_container}>
         <div className={styles.side_menu}>
-          <h3 style={{ marginBottom: "20px" }}>Skill-Lists</h3>
+          <h3 onClick={() => setHidden(!hidden)}>Skill-Lists</h3>
           {menus.map((menu) => {
             return sideMenuItem(menu.title, menu.items);
           })}
+          {isTwoColumn ? (
+            <div className={styles.side_menu_button}>
+              <FontAwesomeIcon
+                icon={hidden ? faCircleChevronDown : faCircleChevronUp}
+                onClick={() => setHidden(!hidden)}
+              />
+            </div>
+          ) : null}
         </div>
       </div>
     );
