@@ -7,9 +7,11 @@
   justify-content: space-around;
   align-items: center;
   padding: 50px 10px;
-  position: sticky;
+  position: absolute;
   top: 0;
-  left: 0;
+  /* position: sticky;
+  top: 0;
+  left: 0; */
   /* background-color: #f7f7f7; */
   background-color: var(--subClr);
 }
@@ -126,8 +128,7 @@
 }
 @media (max-width: 500px) {
   .container {
-    /* height: 115vh; */
-    /* padding: 50px 10px 150px 10px; */
+    right: 0;
   }
   .close_button {
     right: 20%;

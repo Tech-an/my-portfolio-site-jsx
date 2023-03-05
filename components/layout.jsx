@@ -43,14 +43,17 @@ export default function Layout({ children }) {
       <Home />
       <div className={`${styles.container} ${isMobile ? styles.mobile : null}`}>
         <div className={!isWidePC && hidden ? styles.hidden : null}>
-          <SideNav
-            hidden={!isWidePC && hidden}
-            setHidden={setHidden}
-            isWidePC={isWidePC}
-          />
         </div>
         <main className={styles.main_container}>
-          {isWidePC ? null : sideNavHandler()}
+          <div className={styles.nav_container}>
+            {isWidePC ? null : sideNavHandler()}
+            <SideNav
+              hidden={!isWidePC && hidden}
+              setHidden={setHidden}
+              isWidePC={isWidePC}
+              className={styles.side_nav_container}
+            />
+          </div>
           {children}
           <Footer />
         </main>
