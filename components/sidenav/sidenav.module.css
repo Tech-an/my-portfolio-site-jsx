@@ -126,7 +126,7 @@
 }
 @media (max-width: 500px) {
   .container {
-    height: 115vh;
+    /* height: 115vh; */
     padding: 50px 10px 150px 10px;
   }
   .close_button {
