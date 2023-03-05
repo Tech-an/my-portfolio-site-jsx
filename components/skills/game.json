@@ -1,0 +1,26 @@
+{
+  "title": "ゲーム開発",
+  "contents": [
+    {
+      "name": "Unity",
+      "level": 2,
+      "text": "勉強中",
+      "clr_start": "#1fe6ff",
+      "clr_end": "#673AB7"
+    },
+    {
+      "name": "C#",
+      "level": 2,
+      "text": "勉強中",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "C",
+      "level": 3.5,
+      "text": "大学で履修。情報系大学でティーチングアシスタントの経験あり。",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    }
+  ]
+}
