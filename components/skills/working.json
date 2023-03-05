@@ -1,33 +1,33 @@
 {
-  "title": "Web/バックエンド",
+  "title": "作業能力",
   "contents": [
     {
-      "name": "Python",
+      "name": "タイピング",
       "level": 4,
       "text": "未入力",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
-      "name": "AWS",
+      "name": "excel/スプレッドシート",
+      "level": 3.6,
+      "text": "未入力",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "PowerPoint",
+      "level": 3,
+      "text": "未入力",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "CLI (bash / PowerShell / vim)",
       "level": 2,
       "text": "未入力",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
-    },
-    {
-      "name": "MySQL",
-      "level": 1,
-      "text": "未入力",
-      "clr_start": "#3bc0ff",
-      "clr_end": "#33ff00"
-    },
-    {
-      "name": "CMS",
-      "level": 1,
-      "text": "未入力",
-      "clr_start": "#ffee54",
-      "clr_end": "#ff00ca"
     }
   ]
 }

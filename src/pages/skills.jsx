@@ -1,8 +1,18 @@
 import styles from "../styles/skills.module.css";
-import frontend from "../../components/skills/frontend.json";
+
+import web from "../../components/skills/web.json";
 import backend from "../../components/skills/backend.json";
+import native from "../../components/skills/native.json";
+import game from "../../components/skills/game.json";
+import electronic from "../../components/skills/electronic.json";
 import devtool from "../../components/skills/devtool.json";
+import tech from "../../components/skills/tech.json";
+import knowledge from "../../components/skills/knowledge.json";
+import working from "../../components/skills/working.json";
 import english from "../../components/skills/english.json";
+import business from "../../components/skills/business.json";
+import science from "../../components/skills/science.json";
+import hobby from "../../components/skills/hobby.json";
 import { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -18,6 +28,20 @@ import {
 import Accordion from "components/accordion/accordion";
 
 export default function Skills() {
+  // data定義
+  const programmingSkillJsons = [
+    web,
+    backend,
+    native,
+    game,
+    electronic,
+    devtool,
+    tech,
+    knowledge,
+    working,
+  ];
+  const etcSkillJsons = [business, science, hobby];
+
   // sideMenu
   const [hidden, setHidden] = useState(true);
   const [isTwoColumn, setIsTwoColumn] = useState(false);
@@ -72,7 +96,7 @@ export default function Skills() {
     return (
       <div className={styles.side_menu_container}>
         <div className={styles.side_menu}>
-          <h3 onClick={() => setHidden(!hidden)}>Skill-Lists</h3>
+          <h3 onClick={() => setHidden(!hidden)}>Skill-Sets</h3>
           {menus.map((menu) => {
             return sideMenuItem(menu.title, menu.items);
           })}
@@ -90,16 +114,26 @@ export default function Skills() {
   };
   const menus = [
     {
-      title: "Programming",
-      items: [
-        { name: "Frontend", json: frontend },
-        { name: "Backend", json: backend },
-        { name: "Devtool", json: devtool },
-      ],
+      title: "「開発」力",
+      items: programmingSkillJsons.map((jsonData) => {
+        return {
+          name: jsonData.title,
+          json: jsonData,
+        };
+      }),
     },
     {
-      title: "Language",
-      items: [{ name: "English", json: english }],
+      title: "「言語」力",
+      items: [{ name: english.title, json: english }],
+    },
+    {
+      title: "「その他」",
+      items: etcSkillJsons.map((jsonData) => {
+        return {
+          name: jsonData.title,
+          json: jsonData,
+        };
+      }),
     },
   ];
   // contents
@@ -175,7 +209,7 @@ export default function Skills() {
       </div>
     );
   };
-  const [skill, setSkill] = useState(frontend);
+  const [skill, setSkill] = useState(web);
 
   return (
     <div className={styles.container} id="Skills">

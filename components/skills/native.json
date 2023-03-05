@@ -1,33 +1,26 @@
 {
-  "title": "Web/バックエンド",
+  "title": "スマホアプリ開発",
   "contents": [
     {
-      "name": "Python",
-      "level": 4,
+      "name": "ReactNative",
+      "level": 2,
       "text": "未入力",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
-      "name": "AWS",
-      "level": 2,
-      "text": "未入力",
-      "clr_start": "#3bc0ff",
-      "clr_end": "#33ff00"
-    },
-    {
-      "name": "MySQL",
+      "name": "Flutter",
       "level": 1,
       "text": "未入力",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
-      "name": "CMS",
+      "name": "Swift",
       "level": 1,
       "text": "未入力",
-      "clr_start": "#ffee54",
-      "clr_end": "#ff00ca"
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
     }
   ]
 }

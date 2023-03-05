@@ -1,33 +1,40 @@
 {
-  "title": "Web/バックエンド",
+  "title": "電子工作",
   "contents": [
     {
-      "name": "Python",
-      "level": 4,
+      "name": "電子回路",
+      "level": 3,
       "text": "未入力",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
-      "name": "AWS",
-      "level": 2,
+      "name": "論理回路",
+      "level": 3,
       "text": "未入力",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
-      "name": "MySQL",
+      "name": "Arduino",
       "level": 1,
       "text": "未入力",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
-      "name": "CMS",
+      "name": "RasberyPI",
       "level": 1,
       "text": "未入力",
-      "clr_start": "#ffee54",
-      "clr_end": "#ff00ca"
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "CAD/3Dプリンター",
+      "level": 1,
+      "text": "未入力",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
     }
   ]
 }

@@ -1,27 +1,24 @@
 {
-  "title": "開発ツール",
+  "title": "特技系",
   "contents": [
     {
-      "name": "Git/GitHub",
+      "name": "テトリス99",
       "level": 3,
+      "text": "未入力",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
-      "name": "Figma",
+      "name": "マラソン",
       "level": 2,
+      "text": "未入力",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
-      "name": "Docker",
-      "level": 2,
-      "clr_start": "#ffee54",
-      "clr_end": "#ff00ca"
-    },
-    {
-      "name": "Firebase",
-      "level": 2,
+      "name": "けん玉",
+      "level": 1,
+      "text": "未入力",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     }

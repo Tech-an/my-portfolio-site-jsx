@@ -1,0 +1,33 @@
+{
+  "title": "科学系",
+  "contents": [
+    {
+      "name": "情報学",
+      "level": 3,
+      "text": "未入力",
+      "clr_start": "#1fe6ff",
+      "clr_end": "#673AB7"
+    },
+    {
+      "name": "数学",
+      "level": 2.6,
+      "text": "未入力",
+      "clr_start": "#1fe6ff",
+      "clr_end": "#673AB7"
+    },
+    {
+      "name": "神経科学",
+      "level": 3.6,
+      "text": "未入力",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "物理学",
+      "level": 2,
+      "text": "未入力",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    }
+  ]
+}

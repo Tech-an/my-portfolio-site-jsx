@@ -48,8 +48,8 @@
   text-align: center;
   align-items: flex-start;
   position: sticky;
-  margin-top: 50px;
-  top: 20%;
+  margin: 20px 0;
+  top: 15%;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -78,11 +78,11 @@
   color: #ffdd1c;
 }
 .menu_item_title::before {
-  content: "> ";
+  content: "- ";
 }
 .skill_content {
-  margin: 50px;
-  width: 80%;
+  margin: 25px auto 25px;
+  width: 70%;
   height: 100%;
   min-height: 70vh;
 }
@@ -104,7 +104,7 @@
   position: relative;
   width: 40%;
   min-width: 250px;
-  margin: 10px 20px;
+  margin: 10px 2.5px;
   padding: 15px 10px 5px;
   background: linear-gradient(#616161 0%, #333 10%, #222);
   border-radius: 8px;
@@ -149,27 +149,9 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 5px;
-  /* background: linear-gradient(
-    45deg,
-    #ffa600,
-    #ffa900,
-    #ff5700,
-    #f94e00,
-    #f90404
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #ffa600,
-    #ffa900,
-    #ff5700,
-    #f94e00,
-    #f90404
-  ); */
   box-shadow: inset 0 0 10px #000;
   overflow: hidden;
   font-size: 1.6rem;
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 .skill_item .progress {
   position: absolute;
@@ -206,7 +188,7 @@
   .skill_item {
     max-width: 320px;
     width: 80%;
-    margin: 10px 0;
+    margin: 10px 2.5px;
   }
 }
 @media (max-width: 768px) {
