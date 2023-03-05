@@ -5,14 +5,20 @@ import apu from "../../public/APU.jpg";
 import niu from "../../public/NIU.jpg";
 import nu from "../../public/NU.jpg";
 
-import ArrowDown from "components/arrowdown/arrowdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPersonBiking,
   faChevronRight,
+  faPersonRunning,
+  faCarSide,
+  faPlane,
+  faGraduationCap,
+  faCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { useState } from "react";
+import { faLeanpub } from "@fortawesome/free-brands-svg-icons";
+
+import { useState, useEffect } from "react";
 
 /**
  * Reactではpublicフォルダ以下にあるファイルは、そのままURLとしてアクセスできるようになっています。
@@ -20,8 +26,22 @@ import { useState } from "react";
  */
 
 export default function Career() {
+  const [isWidePC, setIsWidePC] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsWidePC(window.innerWidth > 1200);
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const [bgImg, setBgImg] = useState("nu_bg.jpg");
   const [content, setContent] = useState(NU);
+
   const clickHandler = (imgPath, contentDef) => {
     setBgImg(imgPath);
     setContent(contentDef);
@@ -45,13 +65,13 @@ export default function Career() {
         <h2>
           <FontAwesomeIcon icon={faChevronRight} />
           <FontAwesomeIcon icon={faChevronRight} />
-          &nbsp;
+          &nbsp;&nbsp;
           {subtitle}
         </h2>
         <div className={styles.history}>
           <h3>
             <FontAwesomeIcon icon={faPersonBiking} />
-            &nbsp; 活動内容
+            &nbsp;&nbsp; 活動内容
           </h3>
           <ul className={styles.history_content}>
             {activities.map((activeObj) => {
@@ -72,6 +92,22 @@ export default function Career() {
       </div>
     );
   };
+  const navContainer = () => {
+    return (
+      <ul className={styles.navigation}>
+        {navItem("高校", kj, "kj_bg.jpg", KJ)}
+        <FontAwesomeIcon icon={faPersonRunning} className={styles.nav_icon} />
+        {navItem("大学", apu, "apu_bg.jpg", APU)}
+        <FontAwesomeIcon icon={faPersonBiking} className={styles.nav_icon} />
+        {navItem("研究生", niu, "niu_bg.jpg", NIU)}
+        <FontAwesomeIcon icon={faCarSide} className={styles.nav_icon} />
+        {navItem("大学院", nu, "nu_bg.jpg", NU)}
+        <FontAwesomeIcon icon={faPlane} className={styles.nav_icon} />
+      </ul>
+    );
+  };
+
+  const [selectedCareer, setSelectedCareer] = useState("nu");
 
   return (
     <div id="Career">
@@ -79,21 +115,107 @@ export default function Career() {
         <span>C</span>areer
       </h1>
       <section
-        className={styles.container}
+        className={`${styles.container} ${isWidePC ? styles.twoColumn : null}`}
         style={{
           backgroundImage: `url(${bgImg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
+        {isWidePC ? (
+          <div className={styles.side_navigation_container}>
+            <ul className={styles.side_navigation}>
+              <h2>
+                <FontAwesomeIcon icon={faLeanpub} />
+                &nbsp; 学歴
+              </h2>
+              <li
+                onClick={() => {
+                  clickHandler("kj_bg.jpg", KJ);
+                  setSelectedCareer("kj");
+                }}
+              >
+                {selectedCareer == "kj" ? (
+                  <FontAwesomeIcon icon={faGraduationCap} fontSize="1.2rem" />
+                ) : (
+                  <FontAwesomeIcon icon={faCircle} fontSize="0.8rem" />
+                )}
+                <p className={selectedCareer == "kj" ? styles.selected : null}>
+                  &nbsp;&nbsp;大館国際情報学院高等学校
+                </p>
+              </li>
+              <p
+                style={{
+                  borderLeft: "1px solid white",
+                  height: "30px",
+                  transform: "translateX(6px)",
+                }}
+              ></p>
+              <li
+                onClick={() => {
+                  clickHandler("apu_bg.jpg", APU);
+                  setSelectedCareer("apu");
+                }}
+              >
+                {selectedCareer == "apu" ? (
+                  <FontAwesomeIcon icon={faGraduationCap} fontSize="1.2rem" />
+                ) : (
+                  <FontAwesomeIcon icon={faCircle} fontSize="0.8rem" />
+                )}
+                <p className={selectedCareer == "apu" ? styles.selected : null}>
+                  &nbsp;&nbsp;秋田県立大学
+                </p>
+              </li>
+              <p
+                style={{
+                  borderLeft: "1px solid white",
+                  height: "30px",
+                  transform: "translateX(6px)",
+                }}
+              ></p>
+              <li
+                onClick={() => {
+                  clickHandler("niu_bg.jpg", NIU);
+                  setSelectedCareer("niu");
+                }}
+              >
+                {selectedCareer == "niu" ? (
+                  <FontAwesomeIcon icon={faGraduationCap} fontSize="1.2rem" />
+                ) : (
+                  <FontAwesomeIcon icon={faCircle} fontSize="0.8rem" />
+                )}
+                <p className={selectedCareer == "niu" ? styles.selected : null}>
+                  &nbsp;&nbsp;名古屋工業大学
+                </p>
+              </li>
+              <p
+                style={{
+                  borderLeft: "1px solid white",
+                  height: "30px",
+                  transform: "translateX(6px)",
+                }}
+              ></p>
+              <li
+                onClick={() => {
+                  clickHandler("nu_bg.jpg", NU);
+                  setSelectedCareer("nu");
+                }}
+              >
+                {selectedCareer == "nu" ? (
+                  <FontAwesomeIcon icon={faGraduationCap} fontSize="1.2rem" />
+                ) : (
+                  <FontAwesomeIcon icon={faCircle} fontSize="0.8rem" />
+                )}
+                <p className={selectedCareer == "nu" ? styles.selected : null}>
+                  &nbsp;&nbsp;名古屋大学大学院
+                </p>
+              </li>
+            </ul>
+          </div>
+        ) : (
+          navContainer()
+        )}
         {contentItem(...content)}
-        <ul className={styles.navigation}>
-          {navItem("高校", kj, "kj_bg.jpg", KJ)}
-          {navItem("大学", apu, "apu_bg.jpg", APU)}
-          {navItem("研究生", niu, "niu_bg.jpg", NIU)}
-          {navItem("大学院", nu, "nu_bg.jpg", NU)}
-        </ul>
-        {/* <ArrowDown id="Skills" clr="black" /> */}
       </section>
     </div>
   );

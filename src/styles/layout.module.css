@@ -43,6 +43,7 @@
 .side_nav_handler:hover {
   opacity: 0.6;
 }
+
 @media (max-width: 500px) {
   .side_nav_handler {
     font-size: 1.5rem;

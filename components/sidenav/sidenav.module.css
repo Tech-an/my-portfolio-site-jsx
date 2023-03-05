@@ -7,11 +7,11 @@
   justify-content: space-around;
   align-items: center;
   padding: 50px 10px;
-  position: absolute;
+  /* position: absolute;
+  top: 0; */
+  position: sticky;
   top: 0;
-  /* position: sticky;
-  top: 0;
-  left: 0; */
+  left: 0;
   /* background-color: #f7f7f7; */
   background-color: var(--subClr);
 }
@@ -116,6 +116,14 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    position: absolute;
+    top: 0;  
+    left: unset;
   }
 }
 
