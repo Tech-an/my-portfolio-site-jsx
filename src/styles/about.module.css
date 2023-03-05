@@ -231,9 +231,18 @@
 @media (max-width: 500px) {
   .like_content {
     min-width: 250px;
+    min-height: 180px;
   }
   .like_description .like_title::before,
   .like_description .like_title::after {
     width: 23%;
+  }
+}
+@media (max-width: 400px) {
+  .profile .myname {
+    font-size: 7vw;
+  }
+  .profile .myjob {
+    font-size: 5vw;
   }
 }

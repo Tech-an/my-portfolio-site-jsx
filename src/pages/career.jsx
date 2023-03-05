@@ -237,27 +237,31 @@ const NU = [
       category: "課外活動",
       contents: [
         "NPO法人チャリティーサンタ名古屋支部 - 副代表('22)",
-        "WonderChallengeAcademy - キャスト",
+        "WonderChallengeAcademy - ロイヤルキャスト",
       ],
     },
     {
       category: "インターンシップ",
-      contents: ["AKコンサルティング株式会社 - システム開発(8カ月)"],
+      contents: ["AKコンサルティング株式会社 - システム開発 (8カ月)"],
     },
     {
       category: "Teaching Assistant",
       contents: [
         "名古屋大学 (C言語)",
-        "大同大学 (C言語 / Webデザイン(HTML&CSS, React) / Excelなど)",
+        "大同大学 (C言語 / Webデザイン(HTML&CSS/React) / Excelなど)",
       ],
     },
     {
       category: "資格",
-      contents: ["応用情報技術者試験 - 合格", "G検定 - 合格"],
+      contents: [
+        "応用情報技術者試験 - 合格",
+        "G検定 - 合格",
+        "TOEIC - 735点取得",
+      ],
     },
     {
       category: "講座",
-      contents: ["E資格講座 - 修了", "GeekSalon/WebExpert講座 - 修了"],
+      contents: ["E資格講座 - 修了", "GeekSalon / WebExpert講座 - 修了"],
     },
   ],
 ];
@@ -274,10 +278,6 @@ const NIU = [
     {
       category: "学会発表",
       contents: [""],
-    },
-    {
-      category: "資格",
-      contents: ["TOEIC - 735点獲得"],
     },
     {
       category: "エンドレス発表",
