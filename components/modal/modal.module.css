@@ -87,6 +87,7 @@
 .modal_content .imgs {
   width: 58%;
   margin-top: 40px;
+  text-align: center;
 }
 .modal_content .imgs nav ul {
   display: flex;
@@ -109,8 +110,10 @@
 }
 .modal_content .main_img {
   padding: 0 30px 30px;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  max-height: 450px;
+  width: auto;
 }
 .selected {
   /* border: 2px solid #00dc82; */

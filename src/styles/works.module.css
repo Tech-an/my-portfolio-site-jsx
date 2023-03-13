@@ -1,11 +1,8 @@
 .container {
   background: url(../../public/work.avif);
-  /* background: rgba(120, 120, 120, 0.2); */
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  /* background-color: rgba(255, 255, 255, 0.2);
-  background-blend-mode: lighten; */
   min-height: 100vh;
 }
 .title {
@@ -53,7 +50,9 @@
   transition: 0.5s;
 }
 .grid_container .box:hover {
-  background: #00dc82;
+  /* background: #5fa688; */
+  /* background: #39946e; */
+  background: #288f64;
 }
 .grid_container .box img {
   position: relative;
@@ -68,7 +67,6 @@
 }
 .box .content_title {
   border-bottom: #00dc82 solid 2px;
-  /* margin-bottom: 15px; */
   width: 80%;
   margin: 0 auto 15px;
 }

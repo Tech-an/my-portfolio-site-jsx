@@ -60,7 +60,9 @@ export default function About() {
                   <div className={styles.description_text}>
                     <span>静岡県</span>で生まれて<span>秋田県</span>
                     で20年間生活し、現在は<span>名古屋大学</span>
-                    の院生。次年度から<span>ITコンサル</span>
+                    の院生。とにかく興味が沸いたら
+                    <span>何でもやってみたい人間</span>。次年度から
+                    <span>ITコンサル</span>
                     会社で社会人生活をスタート。<span>好奇心と向上心</span>
                     が強み。<span>笑顔とサウナ</span>が好物。
                     <span>ブックカフェ</span>によく出没。
@@ -91,10 +93,9 @@ export default function About() {
           <div className={styles.like_container}>
             {likeContent("プログラミング", [
               "Webサイト/アプリ制作",
-              "Webアプリ制作",
-              "ネイティブアプリ制作",
+              "スマホアプリ制作",
               "ゲーム制作",
-              "ブログ制作",
+              "ブログ制作/SEO",
               "WordPress",
               "AWS",
               "ブロックチェーン/NFT",

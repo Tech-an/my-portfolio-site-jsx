@@ -13,6 +13,7 @@ export default function Works() {
   const workItem = ({
     title,
     text,
+    subtext,
     img_path,
     img_width,
     img_height,
@@ -25,7 +26,7 @@ export default function Works() {
       <div
         className={styles.box}
         onClick={() => {
-          setModalContent({ title, text, about, imgs });
+          setModalContent({ title, text, subtext, about, imgs });
           setShowModal(true);
         }}
         style={{

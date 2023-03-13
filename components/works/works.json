@@ -1,7 +1,8 @@
 [
   {
     "title": "ポートフォリオサイト",
-    "text": "Next.jsをベースにHTML,CSS,JavaScripを駆使して制作しました。",
+    "text": "対外向けに自身をPRするためのポートフォリオサイトです。",
+    "subtext": "Next.jsをベースにHTML , CSS , JavaScripなどを使用して制作しました。",
     "img_path": "/portfolio.jpg",
     "img_width": 1000,
     "img_height": 1000,
@@ -15,7 +16,7 @@
       },
       {
         "title": "開発期間",
-        "text": "2023/2/17 - 2023/3/3",
+        "text": "2023/2/17 - 2023/3/13",
         "icon": "date"
       }
     ],
@@ -29,7 +30,8 @@
   },
   {
     "title": "県章クイズアプリ",
-    "text": "- 現在制作中です -",
+    "text": "県章を覚えるためのシンプルなクイズアプリです。",
+    "subtext": "ReactNative , ExpoAppを利用して制作しました。",
     "img_path": "/quizApp.jpg",
     "img_width": 1000,
     "img_height": 1000,
@@ -48,11 +50,16 @@
         "icon": "date"
       }
     ],
-    "imgs": []
+    "imgs": [
+      "/works/quizApp/quizApp.jpg",
+      "/works/quizApp/quizApp_2.png",
+      "/works/quizApp/quizApp_3.png"
+    ]
   },
   {
     "title": "サイドビューゲーム",
-    "text": "- 現在制作中です -",
+    "text": "現在制作中です。",
+    "subtext": "Unity , C# を使用して制作しています。",
     "img_path": "/unitygame.jpg",
     "img_width": 1000,
     "img_height": 1000,

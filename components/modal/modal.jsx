@@ -91,7 +91,11 @@ export default function Modal({ modalContent, setShowModal }) {
           <div className={styles.modal_content}>
             <div className={styles.text}>
               <h2>{modalContent.title}</h2>
-              <p>{modalContent.text}</p>
+              <p>
+                {modalContent.text}
+                {/* <br /> */}
+                {modalContent.subtext}
+              </p>
               {devContainer(modalContent.about)}
             </div>
             {imgContainer(modalContent.imgs)}
