@@ -42,7 +42,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <ArrowDown id="About" clr={isMobile ? "white" : "black"} />
+      <ArrowDown id="About" clr={"white"} />
+      {/* <ArrowDown id="About" clr={isMobile ? "white" : "black"} /> */}
     </div>
   );
 }

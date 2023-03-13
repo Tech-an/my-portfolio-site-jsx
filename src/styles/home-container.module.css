@@ -1,71 +1,74 @@
 .container {
   position: relative;
   z-index: 10000;
-  padding: 30px 20px 0 20px;
-  /* background-color: var(--mainClr); */
+  padding: 10px 10px 0 10px;
   background-color: var(--subClr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   justify-items: center;
-  height: 100vh;
+  height: 100%;
   color: #fff;
   text-align: center;
+
+  gap: 3%;
+  background: rgba(0, 0, 0, 0.4);
+  letter-spacing: 20px;
+  font-weight: bold;
+  width: 100%;
 }
 
-.title > div {
+/* .title > div {
   letter-spacing: 20px;
+  font-weight: bold;
   height: 100%;
   transition: all 2.3s;
-  font-weight: bold;
-}
+} */
 
 .title_first {
-  font-size: 10vw;
-  /* flex: 1; */
-  transform: translateX(160px);
-  width: 40%;
-  line-height: 80vh;
-  display: flex;
-  justify-content: flex-end;
+  font-size: 8vw;
+  /* transform: translateX(160px); */
+  /* width: 40%; */
+  /* line-height: 80vh; */
+  /* display: flex;
+  justify-content: flex-end; */
 }
 
 .title_second {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 10vw;
-  /* flex: 1; */
-  width: 80%;
-  line-height: 100vh;
-  clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 100%);
+  /* display: flex;
+  justify-content: flex-end; */
+  font-size: 8vw;
+  /* width: 80%; */
+  /* line-height: 100vh; */
+  /* clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 100%); */
 }
 
 .title_effect {
-  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(255, 255, 255, 0.8);
   mix-blend-mode: screen;
-  color: #000;
-}
-
-.title > p {
-  letter-spacing: 10px;
-  margin-top: 25px;
-  font-weight: 600;
-  font-size: var(--heading3);
+  color: #000; */
 }
 
 .slideshow {
   width: 100%;
+  border: black 8vw solid;
+  border-bottom: black 6vw solid;
+  margin: 0 auto;
   height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   animation: slideshow 20s infinite;
   transition: background-image 0.5s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: darken;
 }
 
@@ -73,24 +76,24 @@
   0%,
   20% {
     background-image: url("../../public/home_img1.jpg");
-    background-position: 30% center;
+    background-position: 30% 90%;
   }
   40%,
   55% {
     background-image: url("../../public/home_img2.jpg");
-    background-position: center center;
+    background-position: 53% 50%;
   }
   70%,
   90% {
     background-image: url("../../public/home_img3.jpg");
-    background-position: 80% 30%;
+    background-position: 80% 20%;
   }
   100% {
     background-image: url("../../public/home_img1.jpg");
-    background-position: 30% center;
+    background-position: 30% 90%;
   }
 }
-
+/* 
 @media (max-width: 768px) {
   .title > h1 {
     letter-spacing: 12px;
@@ -106,7 +109,6 @@
   .title_first {
     font-size: 9vw;
     transform: translateX(150px);
-    /* flex: 2.5; */
     line-height: 70vh;
     width: 35%;
   }
@@ -114,25 +116,27 @@
   .title_second {
     font-size: 8vw;
     clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
-    /* flex: 1;
-    line-height: 100vh; */
   }
-}
+} */
 
 @media (max-width: 500px) {
-  .container {
+  .title {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    text-transform: uppercase;
+  }
+  .title > .title_first {
+    font-size: 12vw;
+  }
+  .title > .title_second {
+    /* transform: translateX(60px); */
+    width: 100%;
+    text-align: right;
+    font-size: 12vw;
+  }
+  /* .container {
     padding: 15px 13px 0 13px;
   }
-  /* .title > h1 {
-    letter-spacing: 9px;
-    font-size: calc(var(--heading1) * 0.7);
-  }
-  .title > p {
-    letter-spacing: 8px;
-    margin-top: 20px;
-    font-weight: 600;
-    font-size: var(--heading3) * 0.5;
-  } */
 
   .title {
     flex-direction: column;
@@ -155,7 +159,6 @@
     font-size: 13vw;
     flex: 2;
     line-height: 10vh;
-    /* transform: translate(80px, -50px); */
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
@@ -164,5 +167,5 @@
     background: rgba(255, 255, 255, 0);
     mix-blend-mode: normal;
     color: #fff;
-  }
+  } */
 }
