@@ -4,28 +4,28 @@
     {
       "name": "タイピング",
       "level": 4,
-      "text": "未入力",
+      "text": "寿司打6.3打/s",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
-      "name": "excel/スプレッドシート",
+      "name": "excel/GS",
       "level": 3.6,
-      "text": "未入力",
+      "text": "インターンの開発業務で利用 , Teaching-Assistantで指導経験あり",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "PowerPoint",
       "level": 3,
-      "text": "未入力",
+      "text": "基本的な操作/ショートカットなど作業効率〇",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
-      "name": "CLI (bash / PowerShell / vim)",
+      "name": "CLI (bash/vim)",
       "level": 2,
-      "text": "未入力",
+      "text": "インターンおよび普段の開発業務で利用",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     }

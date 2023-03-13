@@ -4,35 +4,35 @@
     {
       "name": "電子回路",
       "level": 3,
-      "text": "未入力",
+      "text": "大学で履修 , 学部の研究でウェアラブルデバイスの開発経験あり",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
       "name": "論理回路",
       "level": 3,
-      "text": "未入力",
+      "text": "大学で座学として履修",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "Arduino",
       "level": 1,
-      "text": "未入力",
+      "text": "修行中",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "RasberyPI",
-      "level": 1,
-      "text": "未入力",
+      "level": 0.6,
+      "text": "修行中",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "CAD/3Dプリンター",
-      "level": 1,
-      "text": "未入力",
+      "level": 0.6,
+      "text": "今後挑戦します！",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     }

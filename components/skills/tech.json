@@ -2,23 +2,30 @@
   "title": "データ処理",
   "contents": [
     {
-      "name": "DeepLearning",
+      "name": "Deep Learning (AI)",
       "level": 3,
-      "text": "未入力",
+      "text": "大学院の修論テーマとして学習 , E資格講座を修了",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
-      "name": "DataScience/統計",
+      "name": "Data Science (統計)",
       "level": 2,
-      "text": "未入力",
+      "text": "大学院のセミナーや講義で履修",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "ブロックチェーン",
-      "level": 0.6,
-      "text": "未入力",
+      "level": 1,
+      "text": "修行中",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "スクレイピング",
+      "level": 1,
+      "text": "修行中",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     }

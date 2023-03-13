@@ -1,24 +1,24 @@
 {
-  "title": "ゲーム開発",
+  "title": "ゲームアプリ",
   "contents": [
     {
       "name": "Unity",
       "level": 2,
-      "text": "勉強中",
+      "text": "ゲーム制作に活用 , 簡単なローカルゲームなら開発可能",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
       "name": "C#",
       "level": 2,
-      "text": "勉強中",
+      "text": "ゲーム制作に活用 , 簡単なローカルゲームなら開発可能",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "C",
       "level": 3.5,
-      "text": "大学で履修。情報系大学でティーチングアシスタントの経験あり。",
+      "text": "大学で履修 , Teaching-Assistantの経験あり。",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     }

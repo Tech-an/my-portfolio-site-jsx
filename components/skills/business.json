@@ -1,31 +1,38 @@
 {
-  "title": "ビジネス系",
+  "title": "ビジネス",
   "contents": [
+    {
+      "name": "プロマネ",
+      "level": 2,
+      "text": "NPO法人の活動でプロジェクトリーダーの経験あり , スケジュール管理 , チームビルディング",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "プレゼン",
+      "level": 2,
+      "text": "大学やNPO法人の活動など複数プレゼン経験あり (緊張しいという弱点もあり)",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
     {
       "name": "マーケティング",
       "level": 1,
-      "text": "未入力",
+      "text": "修行中",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
-      "name": "プロマネ",
-      "level": 1.6,
-      "text": "未入力",
+      "name": "株式投資",
+      "level": 1,
+      "text": "修行中",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "コンサルティング",
-      "level": 1,
-      "text": "未入力",
-      "clr_start": "#3bc0ff",
-      "clr_end": "#33ff00"
-    },
-    {
-      "name": "株式投資",
-      "level": 1,
-      "text": "未入力",
+      "level": 0.6,
+      "text": "今後挑戦します！",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     }

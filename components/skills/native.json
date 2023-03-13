@@ -1,24 +1,24 @@
 {
-  "title": "スマホアプリ開発",
+  "title": "スマホアプリ",
   "contents": [
     {
       "name": "ReactNative",
       "level": 2,
-      "text": "未入力",
+      "text": "県章アプリ制作に活用 , 簡単なローカルアプリなら開発可能",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
       "name": "Flutter",
-      "level": 1,
-      "text": "未入力",
+      "level": 0.6,
+      "text": "今後挑戦します！",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "Swift",
-      "level": 1,
-      "text": "未入力",
+      "level": 0.6,
+      "text": "今後挑戦します！",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     }

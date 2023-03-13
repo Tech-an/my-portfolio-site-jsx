@@ -1,31 +1,31 @@
 {
-  "title": "Web/バックエンド",
+  "title": "Web/BackEnd",
   "contents": [
     {
       "name": "Python",
       "level": 4,
-      "text": "未入力",
+      "text": "研究活動で利用 , インターン業務で利用",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
       "name": "AWS",
-      "level": 2,
-      "text": "未入力",
+      "level": 1,
+      "text": "修行中(サーバレスアーキテクチャなど)",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "MySQL",
       "level": 1,
-      "text": "未入力",
+      "text": "修行中(AWS>DynamoDBなど)",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "CMS",
       "level": 1,
-      "text": "未入力",
+      "text": "修行中(NotionAPIなど)",
       "clr_start": "#ffee54",
       "clr_end": "#ff00ca"
     }

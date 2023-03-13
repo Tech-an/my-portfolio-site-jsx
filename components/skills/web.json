@@ -1,59 +1,52 @@
 {
-  "title": "Web/フロントエンド",
+  "title": "Web/FrontEnd",
   "contents": [
     {
       "name": "HTML/CSS",
       "level": 3,
-      "text": "独学(3年) , GeekSalonのWebExpertコース修了 , 情報系大学でTeaching-Assistantの経験あり",
+      "text": "GeekSalon-WebExpertコース修了 , Teaching-Assistantの経験あり",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
       "name": "JavaScript",
       "level": 4,
-      "text": "独学(3年) , GeekSalonのWebExpertコース修了 , 情報系大学でTeaching-Assistantの経験あり",
+      "text": "GeekSalon-WebExpertコース修了 , Teaching-Assistantの経験あり",
       "clr_start": "#ffee54",
       "clr_end": "#ff00ca"
     },
     {
-      "name": "React",
+      "name": "React / Next.js",
       "level": 3,
-      "text": "独学(1年) , 情報系大学でTeaching-Assistantの経験あり",
-      "clr_start": "#22ffde",
-      "clr_end": "#2196F3"
-    },
-    {
-      "name": "Next.js",
-      "level": 3,
-      "text": "独学(半年) , ポートフォリオサイト制作に利用",
+      "text": "Teaching-Assistantの経験あり , ポートフォリオサイト制作に利用",
       "clr_start": "#22ffde",
       "clr_end": "#2196F3"
     },
     {
       "name": "TypeScript",
       "level": 1,
-      "text": "独学(1カ月) , まだまだ実用レベルではない",
+      "text": "修行中",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "SASS",
       "level": 1,
-      "text": "独学(1カ月) , まだまだ実用レベルではない",
+      "text": "修行中",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
-      "name": "WordPress",
-      "level": 1,
-      "text": "独学(1週間) , まだまだ実用レベルではない",
+      "name": "WordPress / PHP",
+      "level": 2,
+      "text": "Wander Challenge Academyのホームページ制作に活用中",
       "clr_start": "#22ffde",
       "clr_end": "#2196F3"
     },
     {
-      "name": "PHP",
-      "level": 1,
-      "text": "独学(1週間) , まだまだ実用レベルではない",
+      "name": "SEO対策",
+      "level": 0.6,
+      "text": "挑戦予定",
       "clr_start": "#22ffde",
       "clr_end": "#2196F3"
     }

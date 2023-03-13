@@ -259,7 +259,7 @@ const NU = [
       category: "Teaching Assistant",
       contents: [
         "名古屋大学 (C言語)",
-        "大同大学 (C/Webデザイン(HTML&CSS/React)/Excel...)",
+        "大同大学 (C/Webデザイン(HTML&CSS/React)/Excelなど)",
       ],
     },
     {
@@ -274,6 +274,10 @@ const NU = [
       category: "講座",
       contents: ["E資格講座 - 修了", "GeekSalon / WebExpert講座 - 修了"],
     },
+    {
+      category: "挑戦",
+      contents: ["ハーフマラソン - サブ2達成", "旅 - 東日本一周 (車)"],
+    },
   ],
 ];
 
@@ -284,15 +288,20 @@ const NIU = [
   [
     {
       category: "研究活動",
-      contents: ["視覚野に関する研究"],
+      contents: [
+        "視力と視覚野に関する研究",
+        "MW検出を目的とするNIRSデバイス開発に関する研究",
+      ],
     },
     {
       category: "学会発表",
-      contents: [""],
+      contents: ["電気学会C部門大会(2019/9)"],
     },
     {
-      category: "エンドレス発表",
-      contents: [""],
+      category: "輪講発表",
+      contents: [
+        "Pattern Recognition and Machine Learning (Information Science and Statistics) - 1~2章担当",
+      ],
     },
   ],
 ];
@@ -303,19 +312,26 @@ const APU = [
   [
     {
       category: "研究活動",
-      contents: [""],
+      contents: ["MW検出を目的とするNIRSデバイス開発に関する研究"],
     },
     {
       category: "学会発表",
-      contents: [""],
+      contents: ["電気学会 電子・情報・システム部門大会(2018/9)"],
     },
     {
-      category: "サークル活動",
-      contents: ["up←A - 代表('18)"],
+      category: "課外活動",
+      contents: [
+        "up←A (ボランティアサークル代表, 2018)",
+        "NPO法人チャリティーサンタ秋田支部 - 当日ボランティア",
+      ],
     },
     {
-      category: "実績",
-      contents: ["GPA:4.02で卒業 / 入試順位 - 学科2位"],
+      category: "学業成績",
+      contents: [
+        "卒業時GPA-4.02",
+        "入試順位-学科2位",
+        "学業成績上位による授業料免除獲得",
+      ],
     },
   ],
 ];
@@ -325,8 +341,16 @@ const KJ = [
   "普通科 / 進学クラス",
   [
     {
-      category: "実績",
-      contents: ["入学時の学力テスト262/264位から2位まで下剋上。"],
+      category: "学業成績",
+      contents: [
+        "入学時 学力テスト-258位/264位",
+        "1学年終了後 学力テスト-2位/264位",
+        "全国模試 - 学内1位(1度)",
+      ],
+    },
+    {
+      category: "課外活動",
+      contents: ["ボランティア活動"],
     },
   ],
 ];

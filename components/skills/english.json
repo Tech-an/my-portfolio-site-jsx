@@ -3,25 +3,29 @@
   "contents": [
     {
       "name": "Reading",
-      "level": 4,
+      "level": 3,
+      "text": "TOEIC:735点 , 英語論文調査など",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
       "name": "Listening",
-      "level": 3,
+      "level": 2,
+      "text": "TOEIC:735点",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "Writing",
-      "level": 2,
+      "level": 1.6,
+      "text": "修士論文のアブストラクト執筆など",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "Speaking",
       "level": 1,
+      "text": "修行中",
       "clr_start": "#ffee54",
       "clr_end": "#ff00ca"
     }

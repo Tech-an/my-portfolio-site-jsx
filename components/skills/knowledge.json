@@ -4,21 +4,28 @@
     {
       "name": "ネットワーク",
       "level": 2,
-      "text": "未入力",
+      "text": "応用情報技術者試験 - 所持",
       "clr_start": "#1fe6ff",
       "clr_end": "#673AB7"
     },
     {
       "name": "セキュリティ",
-      "level": 1,
-      "text": "未入力",
+      "level": 2,
+      "text": "応用情報技術者試験 - 所持",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "データベース",
-      "level": 1,
-      "text": "未入力",
+      "level": 2,
+      "text": "応用情報技術者試験 - 所持",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
+      "name": "オブジェクト指向",
+      "level": 2.6,
+      "text": "応用情報技術者試験 - 所持  , UMLについて学習中",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     }

@@ -62,7 +62,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   margin: 0 0 0 auto;
-  padding: 0 15px 15px 0;
+  padding: 0 15px 50px 0;
   height: 42vh;
   overflow-x: hidden;
   overflow-y: overlay;
@@ -76,6 +76,7 @@
 .history > ul > h3 {
   text-align: center;
   padding: 15px 20px 15px 0;
+  margin-bottom: 30px;
   border-bottom: #ff6493 2px solid;
   position: sticky;
   top: 0;
@@ -90,7 +91,7 @@
   /* transform: translateX(47%); */
   display: block;
   width: 50%;
-  margin: 0 0 0 auto;
+  margin: 20px 0 20px auto;
 }
 .category_title {
   text-align: center;
