@@ -24,9 +24,9 @@
   width: 100%;
 }
 .content {
-  margin: 80px auto;
+  margin: 50px auto;
   padding: 30px 5%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
   border-radius: 10px;
   width: 60%;
@@ -36,53 +36,81 @@
   margin-top: 15px;
 }
 .content > h1 {
-  /* font-size: 40px; */
-  font-size: 2.9vw;
-  border-bottom: 5px solid #ff6493;
-  border-image: linear-gradient(to right, #ff6493 0%, #ff6493 60%, #fff 100%);
-  border-image-slice: 1;
+  font-size: 2.7vw;
+  color: #fff;
+  width: 100%;
+  margin: 13px 0 8px 0;
+  padding: 5px 0 5px 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-left: #ff6493 solid 15px;
   display: inline-block;
   padding-right: 50px;
   line-height: 60px;
-  margin: 10px 0;
 }
 .content > h1 > span {
-  /* font-size: 60px; */
   font-size: 4vw;
 }
 .content > h2 {
   font-size: 18px;
-  /* color: rgba(230, 230, 230, 1); */
 }
 .content > h3 {
   font-size: calc(var(--heading3) * 0.8);
   color: rgba(230, 230, 230, 1);
 }
-
 .history_content {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
-  margin: 5px 0;
-  padding: 0 15px;
-  height: 35vh;
+  margin: 0 0 0 auto;
+  padding: 0 15px 15px 0;
+  height: 42vh;
+  overflow-x: hidden;
   overflow-y: overlay;
   color: rgba(230, 230, 230, 1);
 }
-.category_title {
-  font-weight: bold;
-  border-bottom: 1.6px solid #ff6493;
-  border-image: linear-gradient(to right, #ff6493 0%, #ff6493 60%, #fff 100%);
-  border-image-slice: 1;
-  display: inline-block;
-  padding-right: 30px;
-  margin: 10px 0 5px;
+.history_content > ul {
+  padding-top: 10px;
+  position: relative;
+  padding: 0 50px;
 }
-.content li {
-  list-style: circle inside;
+.history > ul > h3 {
+  text-align: center;
+  padding: 15px 20px 15px 0;
+  border-bottom: #ff6493 2px solid;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+.history_content > ul + ul::before {
+  content: "　";
+  height: 20px;
+  border-left: #fff 2px dashed;
+  /* transform: translateX(47%); */
+  display: block;
+  width: 50%;
+  margin: 0 0 0 auto;
+}
+.category_title {
+  text-align: center;
+  /* padding-right: 30px; */
+  margin: 10px 0 5px;
+  text-shadow: 5px 5px 5px #ff6493;
+}
+/* .category_title::before {
+  content: "<";
+  padding: 0 5px;
+  text-shadow: 0px 0px 0px #ff6493;
+}
+.category_title::after {
+  content: ">";
+  padding: 0 5px;
+  text-shadow: 0px 0px 0px #ff6493;
+} */
+.history_content li {
+  text-align: center;
   margin-bottom: 2px;
-  font-size: var(--body);
-  text-indent: -1em;
-  padding-left: 1em;
 }
 
 .navigation {
@@ -95,7 +123,7 @@
 }
 
 .navigation li {
-  list-style: none;
+  /* list-style: none; */
   cursor: pointer;
   margin: 0 10px;
   border-radius: 4px;
@@ -143,7 +171,7 @@
   display: flex;
 }
 .side_navigation_container {
-  background: rgb(0 0 0 / 60%);
+  background: rgb(0 0 0 / 82%);
   min-height: 700px;
 }
 .side_navigation {
@@ -152,7 +180,7 @@
   transform: translateY(80px);
 }
 .side_navigation h2 {
-  border-bottom: 5px solid #ff6493;
+  /* border-bottom: 5px solid #ff6493; */
   border-image: linear-gradient(
     to right,
     #ff6493 0%,
@@ -162,19 +190,23 @@
   border-image-slice: 1;
   display: inline-block;
   width: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-.side_navigation li{
+.side_navigation li {
   display: flex;
   align-items: center;
+  color: rgb(210, 210, 210);
+  font-size: 0.9rem;
 }
-.side_navigation li:hover > p{
+.side_navigation li:hover > p {
   cursor: pointer;
   transition: all 0.35s;
   transform: translateX(10px);
 }
 .selected {
   /* color: #ff7ba3; */
+  color: #fff;
+  border-bottom: #ff6493 solid 3px;
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -182,7 +214,7 @@
 @media (max-width: 1200px) {
   .container {
     padding-bottom: 1px;
-  } 
+  }
   .content {
     width: 80%;
   }
@@ -203,7 +235,7 @@
     padding: 30px 5%;
     width: 90%;
     min-width: unset;
-  }  
+  }
   .content > h1 {
     font-size: 5.5vw;
     display: inline;
@@ -221,9 +253,11 @@
     margin: 20px auto;
   }
   .content > h1 {
-    padding-right: 30px;
-    border-bottom: 3.5px solid #ff6493;
-    display: inline;
+    padding: 5px 10px 5px 10px;
+    margin-top: 15px;
+    display: inline-block;
+    width: 100%;
+    line-height: 45px;
   }
   .content > h1 > span {
     font-size: 6.5vw;

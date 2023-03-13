@@ -81,18 +81,15 @@ export default function SideNav({ hidden, setHidden, isWidePC }) {
                   &nbsp;&nbsp;Works&nbsp;
                 </Link>
               </li>
-              <li style={{ "--clr": "#dc00d4" }}>
+              {/* <li style={{ "--clr": "#dc00d4" }}>
                 <Link
-                  // to="Play"
                   to="Blog"
                   spy={true}
                   smooth={true}
                   duration={500}
-                  // data-text="&nbsp;&nbsp;Play&nbsp;"
                   data-text="&nbsp;&nbsp;Blog&nbsp;"
                 >
                   &nbsp;&nbsp;Blog&nbsp;
-                  {/* &nbsp;&nbsp;Play&nbsp; */}
                 </Link>
               </li>
               <li style={{ "--clr": "#7700e2" }}>
@@ -105,7 +102,7 @@ export default function SideNav({ hidden, setHidden, isWidePC }) {
                 >
                   &nbsp;&nbsp;Play&nbsp;
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

@@ -21,8 +21,8 @@ export default function Index() {
           <Career />
           <Skills />
           <Works />
-          <Blog />
-          <Play />
+          {/* <Blog /> */}
+          {/* <Play /> */}
         </section>
         <ProgressBar />
       </Layout>

@@ -69,20 +69,27 @@ export default function Career() {
           {subtitle}
         </h2>
         <div className={styles.history}>
-          <h3>
-            <FontAwesomeIcon icon={faPersonBiking} />
-            &nbsp;&nbsp; 活動内容
-          </h3>
           <ul className={styles.history_content}>
+            <h3>
+              <FontAwesomeIcon icon={faPersonBiking} />
+              &nbsp;&nbsp; 活動内容
+            </h3>
             {activities.map((activeObj) => {
               return (
                 <ul key={activeObj.category}>
                   <p className={styles.category_title}>
-                    <FontAwesomeIcon icon={faChevronRight} />
-                    &nbsp;&nbsp;{activeObj.category}
+                    {/* <FontAwesomeIcon icon={faChevronRight} /> */}
+                    {/* &nbsp;&nbsp; */}
+                    {activeObj.category}
                   </p>
                   {activeObj.contents.map((text) => {
-                    return <li key={text}>{text}</li>;
+                    return (
+                      <li key={text}>
+                        {/* <FontAwesomeIcon icon={faChevronRight} />
+                        &nbsp;&nbsp; */}
+                        {text}
+                      </li>
+                    );
                   })}
                 </ul>
               );
@@ -140,8 +147,9 @@ export default function Career() {
                 ) : (
                   <FontAwesomeIcon icon={faCircle} fontSize="0.8rem" />
                 )}
+                &nbsp;&nbsp;
                 <p className={selectedCareer == "kj" ? styles.selected : null}>
-                  &nbsp;&nbsp;大館国際情報学院高等学校
+                  大館国際情報学院高等学校
                 </p>
               </li>
               <p
@@ -162,8 +170,9 @@ export default function Career() {
                 ) : (
                   <FontAwesomeIcon icon={faCircle} fontSize="0.8rem" />
                 )}
+                &nbsp;&nbsp;
                 <p className={selectedCareer == "apu" ? styles.selected : null}>
-                  &nbsp;&nbsp;秋田県立大学
+                  秋田県立大学
                 </p>
               </li>
               <p
@@ -184,8 +193,9 @@ export default function Career() {
                 ) : (
                   <FontAwesomeIcon icon={faCircle} fontSize="0.8rem" />
                 )}
+                &nbsp;&nbsp;
                 <p className={selectedCareer == "niu" ? styles.selected : null}>
-                  &nbsp;&nbsp;名古屋工業大学
+                  名古屋工業大学
                 </p>
               </li>
               <p
@@ -206,8 +216,9 @@ export default function Career() {
                 ) : (
                   <FontAwesomeIcon icon={faCircle} fontSize="0.8rem" />
                 )}
+                &nbsp;&nbsp;
                 <p className={selectedCareer == "nu" ? styles.selected : null}>
-                  &nbsp;&nbsp;名古屋大学大学院
+                  名古屋大学大学院
                 </p>
               </li>
             </ul>
@@ -248,7 +259,7 @@ const NU = [
       category: "Teaching Assistant",
       contents: [
         "名古屋大学 (C言語)",
-        "大同大学 (C言語 / Webデザイン(HTML&CSS/React) / Excelなど)",
+        "大同大学 (C/Webデザイン(HTML&CSS/React)/Excel...)",
       ],
     },
     {

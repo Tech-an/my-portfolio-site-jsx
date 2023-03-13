@@ -90,14 +90,14 @@ export default function About() {
           </div>
           <div className={styles.like_container}>
             {likeContent("プログラミング", [
-              "Webサイト制作",
+              "Webサイト/アプリ制作",
+              "Webアプリ制作",
               "ネイティブアプリ制作",
               "ゲーム制作",
               "ブログ制作",
-              "AWS",
               "WordPress",
-              "ブロックチェーン",
-              "NFT",
+              "AWS",
+              "ブロックチェーン/NFT",
             ])}
             {likeContent("統計モデル", [
               "DeepLearning",
@@ -107,21 +107,29 @@ export default function About() {
             {likeContent("科学", [
               "数学",
               "神経科学",
-              "栄養学",
-              "健康学",
-              "生物",
-              "宇宙物理",
-              "物理",
-              "化学",
+              "栄養/健康学",
+              "宇宙/物理/化学",
             ])}
             {likeContent("ビジネス", [
               "株式投資",
-              "個人事業",
+              "個人事業/起業",
               "マーケティング",
-              "プロジェクトマネジメント",
+              "プロマネ",
             ])}
-            {likeContent("モノづくり", ["イラスト制作", "電子工作", "DIY"])}
-            {likeContent("その他", ["筋トレ", "英会話", "ランニング"])}
+            {likeContent("モノづくり", [
+              "プログラミング系全般",
+              "イラスト制作",
+              "電子工作",
+              "DIY",
+            ])}
+            {likeContent("その他", [
+              "筋トレ",
+              "英語/英会話",
+              "マラソン",
+              "トライアスロン",
+              "ピアノ",
+              "海外旅行",
+            ])}
           </div>
         </div>
       </div>
