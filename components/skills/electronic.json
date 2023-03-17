@@ -16,6 +16,13 @@
       "clr_end": "#33ff00"
     },
     {
+      "name": "センサ素子",
+      "level": 0.6,
+      "text": "今後挑戦します！",
+      "clr_start": "#3bc0ff",
+      "clr_end": "#33ff00"
+    },
+    {
       "name": "Arduino",
       "level": 1,
       "text": "修行中",

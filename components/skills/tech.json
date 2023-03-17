@@ -10,22 +10,22 @@
     },
     {
       "name": "Data Science (統計)",
-      "level": 2,
+      "level": 2.6,
       "text": "大学院のセミナーや講義で履修",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "ブロックチェーン",
-      "level": 1,
-      "text": "修行中",
+      "level": 1.6,
+      "text": "ブロックチェーンを繋げる仕組みやマイニングなどの基礎知識あり",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     },
     {
       "name": "スクレイピング",
-      "level": 1,
-      "text": "修行中",
+      "level": 1.6,
+      "text": "Webサイト上のテキストや画像なら簡単に一括取得可能",
       "clr_start": "#3bc0ff",
       "clr_end": "#33ff00"
     }
