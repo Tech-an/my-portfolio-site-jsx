@@ -2,7 +2,7 @@ import styles from "../styles/works.module.css";
 import Image from "next/image";
 
 import Modal from "components/modal/modal";
-import workData from "../../components/works/works.json";
+import workData from "public/works/data/works.json";
 
 import { useState } from "react";
 

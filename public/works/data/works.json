@@ -21,11 +21,11 @@
       }
     ],
     "imgs": [
-      "/works/portfolio/home.png",
-      "/works/portfolio/about.png",
-      "/works/portfolio/career.png",
-      "/works/portfolio/skills.png",
-      "/works/portfolio/works.png"
+      "/works/imgs/portfolio/home.png",
+      "/works/imgs/portfolio/about.png",
+      "/works/imgs/portfolio/career.png",
+      "/works/imgs/portfolio/skills.png",
+      "/works/imgs/portfolio/works.png"
     ]
   },
   {
@@ -51,9 +51,9 @@
       }
     ],
     "imgs": [
-      "/works/quizApp/quizApp.jpg",
-      "/works/quizApp/quizApp_2.png",
-      "/works/quizApp/quizApp_3.png"
+      "/works/imgs/quizApp/quizApp.jpg",
+      "/works/imgs/quizApp/quizApp_2.png",
+      "/works/imgs/quizApp/quizApp_3.png"
     ]
   },
   {

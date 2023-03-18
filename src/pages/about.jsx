@@ -1,17 +1,18 @@
 import Image from "next/image";
-import styles from "../styles/about.module.css";
-import profile from "../../public/profile.jpg";
-import ArrowDown from "components/arrowdown/arrowdown";
+import parse from "html-react-parser";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGraduationCap,
   faFeather,
-  faHeart,
   faEnvelope,
   faCheck,
   faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
-// import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+
+import profileImg from "public/about/imgs/profile.jpg";
+import styles from "../styles/about.module.css";
+import data from "public/about/data/about.json";
 
 export default function About() {
   const likeContent = (title, items) => {
@@ -32,6 +33,31 @@ export default function About() {
       </div>
     );
   };
+  const profileTextContents = (contents) => {
+    const fontAwesomeIcons = [faFeather, faEnvelope];
+    return contents.map(({ title, text, keywords }, index) => {
+      return (
+        <div className={styles.description_content} key={title}>
+          <span>
+            <FontAwesomeIcon icon={fontAwesomeIcons[index]} />
+          </span>
+          <div>
+            <h3 className={styles.description_title}>{title}</h3>
+            <p className={styles.description_text}>
+              {toEmphasizeKeywords(text, keywords)}
+            </p>
+          </div>
+        </div>
+      );
+    });
+  };
+  const toEmphasizeKeywords = (text, keywords) => {
+    let emphasizedText = text;
+    keywords.forEach((word) => {
+      emphasizedText = emphasizedText.replace(word, `<span>${word}</span>`);
+    });
+    return parse(emphasizedText);
+  };
 
   return (
     <div className={styles.container} id="About">
@@ -41,47 +67,19 @@ export default function About() {
       <div className={styles.profile}>
         <div className={styles.flex_container}>
           <figure className={styles.figure}>
-            <Image src={profile} alt="profile" className={styles.img} />
+            <Image src={profileImg} alt="profile" className={styles.img} />
           </figure>
           <div className={styles.text}>
-            <h2 className={styles.myname}>佐藤 哲也 (Tetsuya Sato)</h2>
+            <h2 className={styles.myname}>
+              {`${data.ja_name} (${data.en_name})`}
+            </h2>
             <br />
             <h3 className={styles.myjob}>
               <FontAwesomeIcon icon={faGraduationCap} />
-              &nbsp; 名古屋大学大学院生 (M2)
+              &nbsp; {data.job}
             </h3>
             <div className={styles.description}>
-              <div className={styles.description_content}>
-                <span>
-                  <FontAwesomeIcon icon={faFeather} />
-                </span>
-                <div>
-                  <span className={styles.description_title}>プロフィール</span>
-                  <div className={styles.description_text}>
-                    <span>静岡県</span>で生まれて<span>秋田県</span>
-                    で20年間生活し、現在は<span>名古屋大学</span>
-                    の院生。とにかく興味が沸いたら
-                    <span>何でもやってみたい人間</span>。次年度から
-                    <span>ITコンサル</span>
-                    会社で社会人生活をスタート。<span>好奇心と向上心</span>
-                    が強み。<span>笑顔とサウナ</span>が好物。
-                    <span>ブックカフェ</span>によく出没。
-                  </div>
-                </div>
-              </div>
-              <div className={styles.description_content}>
-                <span>
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </span>
-                <div>
-                  <span className={styles.description_title}>連絡先</span>
-                  <div className={styles.description_text}>
-                    <span style={{ fontWeight: "600" }}>
-                      tech.an.2.26@gmail.com
-                    </span>
-                  </div>
-                </div>
-              </div>
+              {profileTextContents(data.profile_contents)}
             </div>
           </div>
         </div>
@@ -136,10 +134,4 @@ export default function About() {
       </div>
     </div>
   );
-}
-
-{
-  /* <div className={styles.arrowdown}>
-          <ArrowDown id="Career" clr="black" />
-        </div> */
 }

@@ -1,7 +1,7 @@
 .container {
   position: relative;
   height: 100%;
-  background: url(../../public/background1.avif) repeat;
+  background: url(/about/imgs/profile_bg.avif) repeat;
   background-attachment: fixed;
   background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
@@ -18,8 +18,6 @@
   top: 0;
   z-index: 100;
   background: var(--subClr);
-  /* color: #00ade1; */
-  /* color: rgba(0, 172, 224, 0.8); */
   color: #dfdfdf;
   font-size: calc(var(--heading1) * 0.7);
   letter-spacing: 3px;
@@ -94,7 +92,7 @@
   margin-top: 20px;
 }
 .description span {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.2rem;
 }
 .description span::before,
@@ -104,6 +102,7 @@
 .description_title {
   border-bottom: 2px solid rgb(101, 101, 101);
   padding-bottom: 2px;
+  display: inline-block;
 }
 .description_text {
   margin-top: 10px;
