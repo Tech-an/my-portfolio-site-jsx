@@ -1,4 +1,3 @@
-import Home from "./home";
 import Layout from "components/layout";
 import About from "./about";
 import Career from "./career";

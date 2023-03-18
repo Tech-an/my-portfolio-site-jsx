@@ -2,7 +2,7 @@ import SideNav from "./sidenav/sidenav";
 import Footer from "./footer";
 import styles from "../src/styles/layout.module.css";
 
-import Home from "@/pages/home";
+import Top from "@/pages/Top";
 
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -40,7 +40,7 @@ export default function Layout({ children }) {
 
   return (
     <div>
-      <Home />
+      <Top />
       <div className={`${styles.container} ${isMobile ? styles.mobile : null}`}>
         <div className={!isWidePC && hidden ? styles.hidden : null}>
           <SideNav
