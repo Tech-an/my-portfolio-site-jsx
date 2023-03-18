@@ -2,7 +2,7 @@ import SideNav from "./sidenav/sidenav";
 import Footer from "./footer";
 import styles from "../src/styles/layout.module.css";
 
-import Top from "@/pages/top";
+import Top from "@/pages/hero";
 
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
