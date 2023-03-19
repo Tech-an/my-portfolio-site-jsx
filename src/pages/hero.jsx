@@ -1,4 +1,4 @@
-import styles from "../styles/top.module.css";
+import styles from "../styles/hero.module.css";
 import ArrowDown from "components/arrowdown/arrowdown";
 
 export default function Top() {
